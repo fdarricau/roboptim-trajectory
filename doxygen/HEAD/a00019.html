@@ -122,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a302d13b8e1cdc9e8336d9f277eb026b1">operator*</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> lambda) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar multiplication of a polynomial.  <a href="#a302d13b8e1cdc9e8336d9f277eb026b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a476d94c1e37cd0e8f3c53c56251cbb01">operator()</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the polynomial.  <a href="#a476d94c1e37cd0e8f3c53c56251cbb01"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the polynomial with Horner's method.  <a href="#a476d94c1e37cd0e8f3c53c56251cbb01"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a3026ed88761f0d452fdfe04a9641ba7e">coefs</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Const getter to coefs.  <a href="#a3026ed88761f0d452fdfe04a9641ba7e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae9718d6ea68938870cb26b14464480f6">coefs</a> ()</td></tr>
@@ -135,8 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the i-th polynomial coefficient.  <a href="#aa977c36e195270a56130ba4d833d542f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a66f12a6a055ee98c3ad5c4d2e54873a0">realRoots</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#a66f12a6a055ee98c3ad5c4d2e54873a0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a23233d14096d1d673e5497958bcceef3">isConstant</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the polynomial is constant.  <a href="#a23233d14096d1d673e5497958bcceef3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a02bd7d6dc41ec46617d3cf227700ec05">isConstant</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> epsilon=Function::epsilon()) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the polynomial is constant.  <a href="#a02bd7d6dc41ec46617d3cf227700ec05"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a> ()</td></tr>
@@ -639,16 +639,17 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a23233d14096d1d673e5497958bcceef3"></a><!-- doxytag: member="roboptim::Polynomial::isConstant" ref="a23233d14096d1d673e5497958bcceef3" args="() const " -->
+<a class="anchor" id="a02bd7d6dc41ec46617d3cf227700ec05"></a><!-- doxytag: member="roboptim::Polynomial::isConstant" ref="a02bd7d6dc41ec46617d3cf227700ec05" args="(value_type epsilon=Function::epsilon()) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a23233d14096d1d673e5497958bcceef3">isConstant</a> </td>
+          <td class="memname">bool <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a02bd7d6dc41ec46617d3cf227700ec05">isConstant</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramname"><em>epsilon</em> = <code>Function::epsilon&#160;()</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -656,6 +657,12 @@ template&lt;int N&gt; </div>
 <div class="memdoc">
 
 <p>Return whether the polynomial is constant. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">epsilon</td><td>epsilon used. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if the polynomial is constant, false otherwise. </dd></dl>
 
 </div>
@@ -677,7 +684,7 @@ template&lt;int N&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Evaluate the polynomial. </p>
+<p>Evaluate the polynomial with Horner's method. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>point of evaluation. </td></tr>
@@ -882,7 +889,7 @@ template&lt;int N&gt; </div>
 <div class="memdoc">
 
 <p>Return the real roots of the polynomial. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>This function relies on Eigen's experimental polynomial solver. </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>This function relies on Eigen's experimental polynomial solver. The polynomial should not be null or constant. </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>vector of the real roots of the polynomial. </dd></dl>
 <dl class="exception"><dt><b>Exceptions:</b></dt><dd>
   <table class="exception">
