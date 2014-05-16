@@ -18,6 +18,8 @@ var searchData=
   ['polynomial_2ehxx',['polynomial.hxx',['../a00058.html',1,'']]],
   ['polynomial3',['Polynomial3',['../a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8',1,'roboptim']]],
   ['polynomial_5ft',['polynomial_t',['../a00004.html#a58d3681717c7b543b34c480c334a09f4',1,'roboptim::BSpline']]],
+  ['polynomials3vector_5ft',['polynomials3vector_t',['../a00007.html#a51055e67a0026088621eb650b25a739f',1,'roboptim::CubicBSpline']]],
+  ['polynomials3vectors_5ft',['polynomials3vectors_t',['../a00007.html#a8bac994ea02f5f7858099c707e352f84',1,'roboptim::CubicBSpline']]],
   ['print',['print',['../a00004.html#aff2b4f4bfb8aeb8c54c26bc3ce880e34',1,'roboptim::BSpline::print()'],['../a00007.html#a3e974fa06743e37072efc0d639e4e8c6',1,'roboptim::CubicBSpline::print()'],['../a00009.html#a4699fe0183b9d707f05fb964df145cac',1,'roboptim::FreeTimeTrajectory::print()'],['../a00025.html#a9fdf55675206c496ae578fdc741d0e03',1,'roboptim::Trajectory::print()']]],
   ['problem_5ft',['problem_t',['../a00010.html#ac99c64ca9f1b66729d6a40e1d4b0ac63',1,'roboptim::Freeze']]],
   ['projector_5f',['projector_',['../a00006.html#a5f37c51c11baa01ab962fc3b917331ff',1,'roboptim::ConstrainedBSpline']]],

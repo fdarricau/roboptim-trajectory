@@ -104,8 +104,17 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00014.html">Monomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#af14be647802fa6698f685df43edf3499">monomial_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, <br class="typebreak"/>
-<a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a6d03a5b246c0bfdef3de7b41ef6d46c3">cox_map</a></td></tr>
+<a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a>, std::less&lt; int &gt;<br class="typebreak"/>
+, Eigen::aligned_allocator<br class="typebreak"/>
+&lt; std::pair&lt; const int, <br class="typebreak"/>
+<a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3b2180db57b8c4be402fbc911df1c8f0">cox_map</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef cox_map::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ace74805dc6518b77623b1bfd42e935e1">cox_map_itr_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a>, <br class="typebreak"/>
+Eigen::aligned_allocator<br class="typebreak"/>
+&lt; <a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3702142ebd370658d9d79528a8f78c11">basisPolynomials_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="a00004.html#a3702142ebd370658d9d79528a8f78c11">basisPolynomials_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3834740b6dbb7b37d7ca4de4670ba85f">basisPolynomialsVector_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a2deb2d643d8d859be7f49d4a6f125e1d">BSpline</a> (<a class="el" href="a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> dimension, const <a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const std::string name=&quot;B-Spline&quot;)</td></tr>
@@ -139,9 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a6c0f24371afc52ea8da4ed8a21c710fc">interval</a> (<a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> t) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a4074fa2bebbbeb79bd6ad9aadce19577">getNumberControlPoints</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of control points of the spline.  <a href="#a4074fa2bebbbeb79bd6ad9aadce19577"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::vector<br class="typebreak"/>
-&lt; <a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a3c1bd3dc34d053bdd1380024ff168c68">basisPolynomials</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant getter for the basis polynomials of the B-spline.  <a href="#a3c1bd3dc34d053bdd1380024ff168c68"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00004.html#a3834740b6dbb7b37d7ca4de4670ba85f">basisPolynomialsVector_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#af96472f2ed4cf6adc7c124a732d77dea">basisPolynomials</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant getter for the basis polynomials of the B-spline.  <a href="#af96472f2ed4cf6adc7c124a732d77dea"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a34896c40dc578750b9d1e4b70463e7a4">impl_compute</a> (<a class="el" href="a00004.html#aac6152350c075f143fb812abeda6d6e0">result_t</a> &amp;, double) const </td></tr>
@@ -149,7 +157,7 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a0947260a5f9a00cdc802f27360d53fac">impl_derivative</a> (<a class="el" href="a00004.html#a6f3b8e2ccf72b17205c00f56bfaef4cf">gradient_t</a> &amp;g, <a class="el" href="a00022.html">StableTimePoint</a>, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#ad2b147d545561d738cefcb9d5c86730f">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a0d3879c2c90db8d035d4315ebe8e7894">basisFunctions</a> (<a class="el" href="a00004.html#a3716ae7634d11c3f406eeeb4c1a17277">value_type</a> t, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> order) const ROBOPTIM_TRAJECTORY_DEPRECATED</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#afac4dd240d6c5299e26af185f0240466">computeBasisPolynomials</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a6d03a5b246c0bfdef3de7b41ef6d46c3">cox_map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8">cox_de_boor</a> (<a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> j, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> n) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00004.html#a3b2180db57b8c4be402fbc911df1c8f0">cox_map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8">cox_de_boor</a> (<a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> j, <a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a> n) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate base polynomial set For the basic spline formula noted in the pdf from the docs section, this implements (3), the recursion formula.  <a href="#a06098611f482bc64a6b5d0c0f24ed1f8"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -162,14 +170,44 @@ Static Protected Attributes</h2></td></tr>
  class roboptim::BSpline&lt; N &gt;</h3>
 
 <hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a6d03a5b246c0bfdef3de7b41ef6d46c3"></a><!-- doxytag: member="roboptim::BSpline::cox_map" ref="a6d03a5b246c0bfdef3de7b41ef6d46c3" args="" -->
+<a class="anchor" id="a3702142ebd370658d9d79528a8f78c11"></a><!-- doxytag: member="roboptim::BSpline::basisPolynomials_t" ref="a3702142ebd370658d9d79528a8f78c11" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;int, <a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a>&gt; <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a6d03a5b246c0bfdef3de7b41ef6d46c3">cox_map</a></td>
+          <td class="memname">typedef std::vector&lt; <a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a>, Eigen::aligned_allocator&lt;<a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a>&gt; &gt; <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a3702142ebd370658d9d79528a8f78c11">basisPolynomials_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3834740b6dbb7b37d7ca4de4670ba85f"></a><!-- doxytag: member="roboptim::BSpline::basisPolynomialsVector_t" ref="a3834740b6dbb7b37d7ca4de4670ba85f" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00004.html#a3702142ebd370658d9d79528a8f78c11">basisPolynomials_t</a>&gt; <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a3834740b6dbb7b37d7ca4de4670ba85f">basisPolynomialsVector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3b2180db57b8c4be402fbc911df1c8f0"></a><!-- doxytag: member="roboptim::BSpline::cox_map" ref="a3b2180db57b8c4be402fbc911df1c8f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt; int, <a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a>, std::less&lt;int&gt;, Eigen::aligned_allocator&lt;std::pair&lt;const int, <a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a>&gt; &gt; &gt; <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a3b2180db57b8c4be402fbc911df1c8f0">cox_map</a></td>
         </tr>
       </table>
 </div>
@@ -599,14 +637,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3c1bd3dc34d053bdd1380024ff168c68"></a><!-- doxytag: member="roboptim::BSpline::basisPolynomials" ref="a3c1bd3dc34d053bdd1380024ff168c68" args="() const " -->
+<a class="anchor" id="af96472f2ed4cf6adc7c124a732d77dea"></a><!-- doxytag: member="roboptim::BSpline::basisPolynomials" ref="af96472f2ed4cf6adc7c124a732d77dea" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;std::vector &lt;<a class="el" href="a00004.html#a58d3681717c7b543b34c480c334a09f4">polynomial_t</a>&gt; &gt;&amp; <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a3c1bd3dc34d053bdd1380024ff168c68">basisPolynomials</a> </td>
+          <td class="memname">const <a class="el" href="a00004.html#a3834740b6dbb7b37d7ca4de4670ba85f">basisPolynomialsVector_t</a>&amp; <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#af96472f2ed4cf6adc7c124a732d77dea">basisPolynomials</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -648,7 +686,7 @@ template&lt;int N&gt; </div>
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00004.html">BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a6d03a5b246c0bfdef3de7b41ef6d46c3">cox_map</a> <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8">cox_de_boor</a> </td>
+          <td class="memname"><a class="el" href="a00004.html">BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a3b2180db57b8c4be402fbc911df1c8f0">cox_map</a> <a class="el" href="a00004.html">roboptim::BSpline</a>&lt; N &gt;::<a class="el" href="a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8">cox_de_boor</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00004.html#a6dc760276c2d9274db8193d3fec54de1">size_type</a>&#160;</td>
           <td class="paramname"><em>j</em>, </td>

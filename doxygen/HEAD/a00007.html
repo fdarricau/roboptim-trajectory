@@ -58,6 +58,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
@@ -82,6 +83,14 @@ Inheritance diagram for roboptim::CubicBSpline:</div>
 
 <p><a href="a00095.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8">Polynomial3</a>, <br class="typebreak"/>
+Eigen::aligned_allocator<br class="typebreak"/>
+&lt; <a class="el" href="a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8">Polynomial3</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a51055e67a0026088621eb650b25a739f">polynomials3vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="a00007.html#a51055e67a0026088621eb650b25a739f">polynomials3vector_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a8bac994ea02f5f7858099c707e352f84">polynomials3vectors_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">CubicBSpline</a> (<a class="el" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375">interval_t</a> <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">timeRange</a>, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> dimension, const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;<a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">parameters</a>, const std::string name=&quot;cubic B-Spline&quot;)</td></tr>
@@ -118,11 +127,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular spacing between B-spline knots.  <a href="#ace3fa5d056522cbf1f44debc606af465"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a6317258db0055f9d6d8ac20bb3a90e00">translateBasisPolynomials</a> (double t1)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate the basis polynomials to a given time t1.  <a href="#a6317258db0055f9d6d8ac20bb3a90e00"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a92bd1dd5443631f72b629d6a550efe57">toPolynomials</a> (std::vector&lt; <a class="el" href="a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8">Polynomial3</a> &gt; &amp;res) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the polynomial expression of the cubic B-spline on each time interval.  <a href="#a92bd1dd5443631f72b629d6a550efe57"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::vector<br class="typebreak"/>
-&lt; <a class="el" href="a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8">Polynomial3</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a03ed5527b676a82c99a5ca8535dcccb4">basisPolynomials</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant getter for the basis polynomials of the cubic B-spline.  <a href="#a03ed5527b676a82c99a5ca8535dcccb4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#af61810802d57b58005354191b534d1bc">toPolynomials</a> (<a class="el" href="a00007.html#a51055e67a0026088621eb650b25a739f">polynomials3vector_t</a> &amp;res) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the polynomial expression of the cubic B-spline on each time interval.  <a href="#af61810802d57b58005354191b534d1bc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00007.html#a8bac994ea02f5f7858099c707e352f84">polynomials3vectors_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#aaca23b9175958f1dded92148cc48dfe7">basisPolynomials</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant getter for the basis polynomials of the cubic B-spline.  <a href="#aaca23b9175958f1dded92148cc48dfe7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a014bed3c537c09d5ba372582b5bd5b29">getNumberControlPoints</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of control points of the spline.  <a href="#a014bed3c537c09d5ba372582b5bd5b29"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ab4535e26005556ec102826373a6497cd">knotVector</a> () const </td></tr>
@@ -143,7 +151,34 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><p>Cubic B-Spline trajectory. </p>
 <p>Implement a B-Spline as a trajectory as described in doc/cubic-b-spline.tex </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00002.html#_a0">spline-optimization.cc</a>, and <a class="el" href="a00001.html#_a3">spline-time-optimization.cc</a>.</dd>
-</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</dl></div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a51055e67a0026088621eb650b25a739f"></a><!-- doxytag: member="roboptim::CubicBSpline::polynomials3vector_t" ref="a51055e67a0026088621eb650b25a739f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt; <a class="el" href="a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8">Polynomial3</a>, Eigen::aligned_allocator&lt;<a class="el" href="a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8">Polynomial3</a>&gt; &gt; <a class="el" href="a00007.html#a51055e67a0026088621eb650b25a739f">roboptim::CubicBSpline::polynomials3vector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8bac994ea02f5f7858099c707e352f84"></a><!-- doxytag: member="roboptim::CubicBSpline::polynomials3vectors_t" ref="a8bac994ea02f5f7858099c707e352f84" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00007.html#a51055e67a0026088621eb650b25a739f">polynomials3vector_t</a>&gt; <a class="el" href="a00007.html#a8bac994ea02f5f7858099c707e352f84">roboptim::CubicBSpline::polynomials3vectors_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4e3fd3f90b73ff83cb9b170c5f9cd981"></a><!-- doxytag: member="roboptim::CubicBSpline::CubicBSpline" ref="a4e3fd3f90b73ff83cb9b170c5f9cd981" args="(interval_t timeRange, size_type dimension, const vector_t &amp;parameters, const std::string name=&quot;cubic B&#45;Spline&quot;)" -->
 <div class="memitem">
 <div class="memproto">
@@ -282,12 +317,12 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a03ed5527b676a82c99a5ca8535dcccb4"></a><!-- doxytag: member="roboptim::CubicBSpline::basisPolynomials" ref="a03ed5527b676a82c99a5ca8535dcccb4" args="() const " -->
+<a class="anchor" id="aaca23b9175958f1dded92148cc48dfe7"></a><!-- doxytag: member="roboptim::CubicBSpline::basisPolynomials" ref="aaca23b9175958f1dded92148cc48dfe7" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;std::vector &lt;<a class="el" href="a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8">Polynomial3</a>&gt; &gt;&amp; <a class="el" href="a00007.html#a03ed5527b676a82c99a5ca8535dcccb4">roboptim::CubicBSpline::basisPolynomials</a> </td>
+          <td class="memname">const <a class="el" href="a00007.html#a8bac994ea02f5f7858099c707e352f84">polynomials3vectors_t</a>&amp; <a class="el" href="a00007.html#aaca23b9175958f1dded92148cc48dfe7">roboptim::CubicBSpline::basisPolynomials</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -738,7 +773,7 @@ template&lt;typename P &gt; </div>
 
 <p>Implements <a class="el" href="a00025.html#a663fb66c3ef467e6d3f0a33001ed2ad9">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
 
-<p>References <a class="el" href="a00007.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">CubicBSpline()</a>.</p>
+<p>References <a class="el" href="a00007.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">CubicBSpline()</a>, and <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; 3 &gt;::parameters()</a>.</p>
 
 </div>
 </div>
@@ -792,14 +827,14 @@ template&lt;typename P &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a92bd1dd5443631f72b629d6a550efe57"></a><!-- doxytag: member="roboptim::CubicBSpline::toPolynomials" ref="a92bd1dd5443631f72b629d6a550efe57" args="(std::vector&lt; Polynomial3 &gt; &amp;res) const " -->
+<a class="anchor" id="af61810802d57b58005354191b534d1bc"></a><!-- doxytag: member="roboptim::CubicBSpline::toPolynomials" ref="af61810802d57b58005354191b534d1bc" args="(polynomials3vector_t &amp;res) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00007.html#a92bd1dd5443631f72b629d6a550efe57">roboptim::CubicBSpline::toPolynomials</a> </td>
+          <td class="memname">void <a class="el" href="a00007.html#af61810802d57b58005354191b534d1bc">roboptim::CubicBSpline::toPolynomials</a> </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8">Polynomial3</a> &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00007.html#a51055e67a0026088621eb650b25a739f">polynomials3vector_t</a> &amp;&#160;</td>
           <td class="paramname"><em>res</em></td><td>)</td>
           <td> const</td>
         </tr>

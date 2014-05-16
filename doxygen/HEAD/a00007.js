@@ -1,10 +1,12 @@
 var a00007 =
 [
+    [ "polynomials3vector_t", "a00007.html#a51055e67a0026088621eb650b25a739f", null ],
+    [ "polynomials3vectors_t", "a00007.html#a8bac994ea02f5f7858099c707e352f84", null ],
     [ "CubicBSpline", "a00007.html#a4e3fd3f90b73ff83cb9b170c5f9cd981", null ],
     [ "CubicBSpline", "a00007.html#a00f557d748f4ee1b8cfb15b54d3b5c4c", null ],
     [ "~CubicBSpline", "a00007.html#abc3354b8f5c069986fd32549967df3af", null ],
     [ "basisFunctions", "a00007.html#a44e2e0228f37800de87990d3f6543b97", null ],
-    [ "basisPolynomials", "a00007.html#a03ed5527b676a82c99a5ca8535dcccb4", null ],
+    [ "basisPolynomials", "a00007.html#aaca23b9175958f1dded92148cc48dfe7", null ],
     [ "computeBasisPolynomials", "a00007.html#a2ccc246e1d9fc08f3b9a9b7579a6fa12", null ],
     [ "derivAfterSingularPoint", "a00007.html#a13aa0f0de97c0ad0eadbd1a3758254dc", null ],
     [ "derivBeforeSingularPoint", "a00007.html#a05170ea645fe94a609758b84ee456e87", null ],
@@ -21,7 +23,7 @@ var a00007 =
     [ "resize", "a00007.html#a629cdb8cd2321fd129893a6e4d2a48bc", null ],
     [ "setParameters", "a00007.html#ad3980bb2d61ceff9f5df92aa17768252", null ],
     [ "singularPointAtRank", "a00007.html#ab28cc29406766f2bb42f720314b6493c", null ],
-    [ "toPolynomials", "a00007.html#a92bd1dd5443631f72b629d6a550efe57", null ],
+    [ "toPolynomials", "a00007.html#af61810802d57b58005354191b534d1bc", null ],
     [ "translateBasisPolynomials", "a00007.html#a6317258db0055f9d6d8ac20bb3a90e00", null ],
     [ "variationConfigWrtParam", "a00007.html#adcf137d2f85a0dea72f1b01eac4db32e", null ],
     [ "variationConfigWrtParam", "a00007.html#ad76c2959098b7c47a06c566cf6300ffd", null ],

@@ -13,7 +13,7 @@ var searchData=
   ['constraint_5fvalues_5f',['constraint_values_',['../a00006.html#ae7020291e1aee55eeb415402eaffdc62',1,'roboptim::ConstrainedBSpline']]],
   ['constraints_5f',['constraints_',['../a00006.html#a721ac835afe376e3459f02d59f85118d',1,'roboptim::ConstrainedBSpline']]],
   ['cox_5fde_5fboor',['cox_de_boor',['../a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8',1,'roboptim::BSpline']]],
-  ['cox_5fmap',['cox_map',['../a00004.html#a6d03a5b246c0bfdef3de7b41ef6d46c3',1,'roboptim::BSpline']]],
+  ['cox_5fmap',['cox_map',['../a00004.html#a3b2180db57b8c4be402fbc911df1c8f0',1,'roboptim::BSpline']]],
   ['cox_5fmap_5fitr_5ft',['cox_map_itr_t',['../a00004.html#ace74805dc6518b77623b1bfd42e935e1',1,'roboptim::BSpline']]],
   ['cubic_2db_2dspline_2ecc',['cubic-b-spline.cc',['../a00037.html',1,'']]],
   ['cubic_2db_2dspline_2ehh',['cubic-b-spline.hh',['../a00038.html',1,'']]],

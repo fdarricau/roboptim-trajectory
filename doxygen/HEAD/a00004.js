@@ -1,6 +1,8 @@
 var a00004 =
 [
-    [ "cox_map", "a00004.html#a6d03a5b246c0bfdef3de7b41ef6d46c3", null ],
+    [ "basisPolynomials_t", "a00004.html#a3702142ebd370658d9d79528a8f78c11", null ],
+    [ "basisPolynomialsVector_t", "a00004.html#a3834740b6dbb7b37d7ca4de4670ba85f", null ],
+    [ "cox_map", "a00004.html#a3b2180db57b8c4be402fbc911df1c8f0", null ],
     [ "cox_map_itr_t", "a00004.html#ace74805dc6518b77623b1bfd42e935e1", null ],
     [ "gradient_t", "a00004.html#a6f3b8e2ccf72b17205c00f56bfaef4cf", null ],
     [ "interval_t", "a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6", null ],
@@ -18,7 +20,7 @@ var a00004 =
     [ "BSpline", "a00004.html#afa6c9456161e34290bf3292dcfdc2d85", null ],
     [ "~BSpline", "a00004.html#ae72c5a15078b5207792b6fa4760ca8f2", null ],
     [ "basisFunctions", "a00004.html#a0d3879c2c90db8d035d4315ebe8e7894", null ],
-    [ "basisPolynomials", "a00004.html#a3c1bd3dc34d053bdd1380024ff168c68", null ],
+    [ "basisPolynomials", "a00004.html#af96472f2ed4cf6adc7c124a732d77dea", null ],
     [ "computeBasisPolynomials", "a00004.html#afac4dd240d6c5299e26af185f0240466", null ],
     [ "cox_de_boor", "a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8", null ],
     [ "derivAfterSingularPoint", "a00004.html#ab621f760ea325778f9e573d76c2aa72e", null ],
