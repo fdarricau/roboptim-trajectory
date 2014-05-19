@@ -90,8 +90,15 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef Function::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef Function::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef Function::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a36cd796b173c0c9ba59525e1f52a83ae">vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Function::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ac6449bfd4a55938da4d5db6e278ff78d">interval_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21">roots_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the vector of roots.  <a href="#a4a73af23ffaa0bbcc5721cfd2fef6a21"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix<br class="typebreak"/>
 &lt; <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>, N+1, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-size coefficient vector (N+1 if N is the polynomial degree).  <a href="#abb886543112518b4cba8f3a17c3c94c1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>, <br class="typebreak"/>
+<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aadfffecc1cc76e8983188256e3b69d56">min_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a minimum query: (t_min, P(t_min))  <a href="#aadfffecc1cc76e8983188256e3b69d56"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a657ec7d47dc937be37e0081c1bb319fb">Polynomial</a> ()</td></tr>
@@ -133,8 +140,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to t0.  <a href="#aad8ba7668a23226c587220430e64226e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aa977c36e195270a56130ba4d833d542f">operator[]</a> (int i) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the i-th polynomial coefficient.  <a href="#aa977c36e195270a56130ba4d833d542f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a66f12a6a055ee98c3ad5c4d2e54873a0">realRoots</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#a66f12a6a055ee98c3ad5c4d2e54873a0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21">roots_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#acc66532e3206f72e5b08451467924595">realRoots</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#acc66532e3206f72e5b08451467924595"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#aadfffecc1cc76e8983188256e3b69d56">min_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#abe4df60f72536099475e2b0dd1c5fde5">min</a> (const <a class="el" href="a00019.html#ac6449bfd4a55938da4d5db6e278ff78d">interval_t</a> &amp;interval) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the minimum of the polynomial on an interval.  <a href="#abe4df60f72536099475e2b0dd1c5fde5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a02bd7d6dc41ec46617d3cf227700ec05">isConstant</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> epsilon=Function::epsilon()) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the polynomial is constant.  <a href="#a02bd7d6dc41ec46617d3cf227700ec05"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
@@ -185,6 +194,57 @@ template&lt;int N&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Fixed-size coefficient vector (N+1 if N is the polynomial degree). </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6449bfd4a55938da4d5db6e278ff78d"></a><!-- doxytag: member="roboptim::Polynomial::interval_t" ref="ac6449bfd4a55938da4d5db6e278ff78d" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Function::interval_t <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ac6449bfd4a55938da4d5db6e278ff78d">interval_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aadfffecc1cc76e8983188256e3b69d56"></a><!-- doxytag: member="roboptim::Polynomial::min_t" ref="aadfffecc1cc76e8983188256e3b69d56" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::pair&lt;<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>, <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aadfffecc1cc76e8983188256e3b69d56">min_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of a minimum query: (t_min, P(t_min)) </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a73af23ffaa0bbcc5721cfd2fef6a21"></a><!-- doxytag: member="roboptim::Polynomial::roots_t" ref="a4a73af23ffaa0bbcc5721cfd2fef6a21" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21">roots_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of the vector of roots. </p>
 
 </div>
 </div>
@@ -667,6 +727,34 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="abe4df60f72536099475e2b0dd1c5fde5"></a><!-- doxytag: member="roboptim::Polynomial::min" ref="abe4df60f72536099475e2b0dd1c5fde5" args="(const interval_t &amp;interval) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aadfffecc1cc76e8983188256e3b69d56">min_t</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#abe4df60f72536099475e2b0dd1c5fde5">min</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00019.html#ac6449bfd4a55938da4d5db6e278ff78d">interval_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Compute the minimum of the polynomial on an interval. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>time interval. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>pair containing t_min and the associated minimum of the polynomial on the interval. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a476d94c1e37cd0e8f3c53c56251cbb01"></a><!-- doxytag: member="roboptim::Polynomial::operator()" ref="a476d94c1e37cd0e8f3c53c56251cbb01" args="(value_type t) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -872,14 +960,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a66f12a6a055ee98c3ad5c4d2e54873a0"></a><!-- doxytag: member="roboptim::Polynomial::realRoots" ref="a66f12a6a055ee98c3ad5c4d2e54873a0" args="() const " -->
+<a class="anchor" id="acc66532e3206f72e5b08451467924595"></a><!-- doxytag: member="roboptim::Polynomial::realRoots" ref="acc66532e3206f72e5b08451467924595" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; typename <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a66f12a6a055ee98c3ad5c4d2e54873a0">realRoots</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21">roots_t</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#acc66532e3206f72e5b08451467924595">realRoots</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

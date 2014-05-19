@@ -1,6 +1,9 @@
 var a00019 =
 [
     [ "coefs_t", "a00019.html#abb886543112518b4cba8f3a17c3c94c1", null ],
+    [ "interval_t", "a00019.html#ac6449bfd4a55938da4d5db6e278ff78d", null ],
+    [ "min_t", "a00019.html#aadfffecc1cc76e8983188256e3b69d56", null ],
+    [ "roots_t", "a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21", null ],
     [ "size_type", "a00019.html#a39933631d02811c977ab6f96e4b7b6cd", null ],
     [ "value_type", "a00019.html#a7154408537194a36e0ee0015cb868787", null ],
     [ "vector_t", "a00019.html#a36cd796b173c0c9ba59525e1f52a83ae", null ],
@@ -18,6 +21,7 @@ var a00019 =
     [ "impl_derivative", "a00019.html#ac7bda9aaac0a8e4c32bcc25fa8295a31", null ],
     [ "impl_translate", "a00019.html#ade7edc4c36d96fb7eb8288c15b577c52", null ],
     [ "isConstant", "a00019.html#a02bd7d6dc41ec46617d3cf227700ec05", null ],
+    [ "min", "a00019.html#abe4df60f72536099475e2b0dd1c5fde5", null ],
     [ "operator()", "a00019.html#a476d94c1e37cd0e8f3c53c56251cbb01", null ],
     [ "operator*", "a00019.html#a0c94bad8f9317a217e18cf2896b44bee", null ],
     [ "operator*", "a00019.html#a302d13b8e1cdc9e8336d9f277eb026b1", null ],
@@ -25,7 +29,7 @@ var a00019 =
     [ "operator-", "a00019.html#a38701598fe15b6ae0b38b77851996fab", null ],
     [ "operator[]", "a00019.html#aa977c36e195270a56130ba4d833d542f", null ],
     [ "order", "a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd", null ],
-    [ "realRoots", "a00019.html#a66f12a6a055ee98c3ad5c4d2e54873a0", null ],
+    [ "realRoots", "a00019.html#acc66532e3206f72e5b08451467924595", null ],
     [ "t0", "a00019.html#aba1dc041201a06d7e967fcbb261541ba", null ],
     [ "t0", "a00019.html#aad8ba7668a23226c587220430e64226e", null ],
     [ "translate", "a00019.html#a6ff0d9f7311ce508bc9e67b1d235b417", null ],
