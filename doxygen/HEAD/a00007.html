@@ -135,6 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of control points of the spline.  <a href="#a014bed3c537c09d5ba372582b5bd5b29"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ab4535e26005556ec102826373a6497cd">knotVector</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the knot vector of the spline.  <a href="#ab4535e26005556ec102826373a6497cd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">CubicBSpline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a03ff80152ad6acd8aefbb15e0b95feb7">operator+</a> (const <a class="el" href="a00007.html">CubicBSpline</a> &amp;s) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two cubic B-splines, supposing they have the same dimensions.  <a href="#a03ff80152ad6acd8aefbb15e0b95feb7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#aa7000f5b6d1b131cefe6151363f0af95">operator+=</a> (const <a class="el" href="a00007.html">CubicBSpline</a> &amp;s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a second B-spline to this B-spline.  <a href="#aa7000f5b6d1b131cefe6151363f0af95"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#adccf908b3e4ae0036078eac00509c66b">impl_compute</a> (<a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;, double) const </td></tr>
@@ -226,7 +230,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Number of control points is inferred from dimension of dimenion of parameter vector. </p>
+<p>The number of control points is inferred from the dimension of the parameter vector. </p>
 
 <p>References <a class="el" href="a00007.html#a2ccc246e1d9fc08f3b9a9b7579a6fa12">computeBasisPolynomials()</a>, <a class="el" href="a00025.html#a496e1901f70e1d4418d2f76572112311">roboptim::Trajectory&lt; 3 &gt;::parameters_</a>, and <a class="el" href="a00007.html#ad3980bb2d61ceff9f5df92aa17768252">setParameters()</a>.</p>
 
@@ -724,6 +728,73 @@ template&lt;typename P &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a03ff80152ad6acd8aefbb15e0b95feb7"></a><!-- doxytag: member="roboptim::CubicBSpline::operator+" ref="a03ff80152ad6acd8aefbb15e0b95feb7" args="(const CubicBSpline &amp;s) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">CubicBSpline</a> roboptim::CubicBSpline::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00007.html">CubicBSpline</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add two cubic B-splines, supposing they have the same dimensions. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>other B-spline with the same dimensions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>S2 = S0 + S1 </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if splines do not have the same dimensions. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>References <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; 3 &gt;::parameters()</a>, <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; DerivabilityOrder &gt;::parameters()</a>, <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; 3 &gt;::timeRange()</a>, and <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; DerivabilityOrder &gt;::timeRange()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7000f5b6d1b131cefe6151363f0af95"></a><!-- doxytag: member="roboptim::CubicBSpline::operator+=" ref="aa7000f5b6d1b131cefe6151363f0af95" args="(const CubicBSpline &amp;s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roboptim::CubicBSpline::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00007.html">CubicBSpline</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add a second B-spline to this B-spline. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>other B-spline with the same dimensions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if splines do not have the same dimensions. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>References <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; 3 &gt;::parameters()</a>, <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; DerivabilityOrder &gt;::parameters()</a>, <a class="el" href="a00007.html#ad3980bb2d61ceff9f5df92aa17768252">setParameters()</a>, <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; 3 &gt;::timeRange()</a>, and <a class="el" href="a00025.html#ad9f7c97440a329f98b2407e8cc924387">roboptim::Trajectory&lt; DerivabilityOrder &gt;::timeRange()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3e974fa06743e37072efc0d639e4e8c6"></a><!-- doxytag: member="roboptim::CubicBSpline::print" ref="a3e974fa06743e37072efc0d639e4e8c6" args="(std::ostream &amp;o) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -798,7 +869,7 @@ template&lt;typename P &gt; </div>
 
 <p>References <a class="el" href="a00025.html#a496e1901f70e1d4418d2f76572112311">roboptim::Trajectory&lt; 3 &gt;::parameters_</a>.</p>
 
-<p>Referenced by <a class="el" href="a00007.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">CubicBSpline()</a>, <a class="el" href="a00086.html#gac38788259d62f4369483b198e9734eb1">roboptim::SplineLength::impl_compute()</a>, and <a class="el" href="a00086.html#gabcf4b780c024c21c433d6965bed3c62f">roboptim::SplineLength::impl_gradient()</a>.</p>
+<p>Referenced by <a class="el" href="a00007.html#a4e3fd3f90b73ff83cb9b170c5f9cd981">CubicBSpline()</a>, <a class="el" href="a00086.html#gac38788259d62f4369483b198e9734eb1">roboptim::SplineLength::impl_compute()</a>, <a class="el" href="a00086.html#gabcf4b780c024c21c433d6965bed3c62f">roboptim::SplineLength::impl_gradient()</a>, and <a class="el" href="a00007.html#aa7000f5b6d1b131cefe6151363f0af95">operator+=()</a>.</p>
 
 </div>
 </div>
