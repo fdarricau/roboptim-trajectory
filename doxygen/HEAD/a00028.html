@@ -94,8 +94,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a9986f2a71c46590d7550c191d27fdc99">VectorInterpolation</a> (const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;x, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> outputSize, <a class="el" href="a00025.html#a090f8aa4afd3b36ff98d015c40a21191">value_type</a> dt)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector interpolation constructor.  <a href="#a9986f2a71c46590d7550c191d27fdc99"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#ac3223424bda1845b867dcf1e71b8bf5f">~VectorInterpolation</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a5f3b463a2804fa6db5cf421bd219a0a6">VectorInterpolation</a> (const <a class="el" href="a00028.html">VectorInterpolation</a> &amp;vi)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a5f40eaac69c1884b9629a4fdde85fae5">setParameters</a> (const <a class="el" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca">vector_t</a> &amp;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Store parameters and update coefficients.  <a href="#a5f40eaac69c1884b9629a4fdde85fae5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a567a98aa2ee6accd256468e5a833b0bd">numFrames</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a9708cc4b5c5ab6fc943c5227153a9ff7">variationConfigWrtParam</a> (double t) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variation of a configuration with respect to parameter vector.  <a href="#a9708cc4b5c5ab6fc943c5227153a9ff7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a9246d8230893cd025ac741ea7b298b4b">variationDerivWrtParam</a> (double t, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const </td></tr>
@@ -108,6 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get right limit value of derivative at given singular point.  <a href="#abbf6899270721a7657bb7702b16ba8ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#abd854d07f082d0e528e3cf81e4481769">variationConfigWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html#ac80538d62ff8f37c5232ab93a5aa7a4a">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a1d425bdee1195e1ee0b4c25b158350c1">variationDerivWrtParam</a> (<a class="el" href="a00022.html">StableTimePoint</a> tp, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> order) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="a00028.html">VectorInterpolation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#acdae21f9dc4bee85f382437d06cd561f">trim</a> (<a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> start, <a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a> <a class="el" href="a00025.html#a6e8f23a206f2f6fa065ea254d0792d62">length</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a trajectory corresponding to a sub-part of this trajectory.  <a href="#acdae21f9dc4bee85f382437d06cd561f"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a25cfa8f7277efeab1207b71f1a12d3ff">impl_compute</a> (<a class="el" href="a00025.html#a7c0a6357fa516067002b75114c56cb81">result_t</a> &amp;result, double t) const </td></tr>
@@ -192,6 +197,25 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f3b463a2804fa6db5cf421bd219a0a6"></a><!-- doxytag: member="roboptim::VectorInterpolation::VectorInterpolation" ref="a5f3b463a2804fa6db5cf421bd219a0a6" args="(const VectorInterpolation &amp;vi)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00028.html#a9986f2a71c46590d7550c191d27fdc99">roboptim::VectorInterpolation::VectorInterpolation</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00028.html">VectorInterpolation</a> &amp;&#160;</td>
+          <td class="paramname"><em>vi</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; DerivabilityOrder &gt;::parameters()</a>, and <a class="el" href="a00028.html#a5f40eaac69c1884b9629a4fdde85fae5">setParameters()</a>.</p>
 
 </div>
 </div>
@@ -380,6 +404,26 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a567a98aa2ee6accd256468e5a833b0bd"></a><!-- doxytag: member="roboptim::VectorInterpolation::numFrames" ref="a567a98aa2ee6accd256468e5a833b0bd" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">VectorInterpolation::size_type</a> <a class="el" href="a00028.html#a567a98aa2ee6accd256468e5a833b0bd">roboptim::VectorInterpolation::numFrames</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; 3 &gt;::parameters()</a>.</p>
+
+<p>Referenced by <a class="el" href="a00028.html#acdae21f9dc4bee85f382437d06cd561f">trim()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a10e3767705188efecb3132511b86a5a2"></a><!-- doxytag: member="roboptim::VectorInterpolation::resize" ref="a10e3767705188efecb3132511b86a5a2" args="(interval_t timeRange) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -468,6 +512,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; 3 &gt;::parameters()</a>, and <a class="el" href="a00025.html#a4cf72959ed1776528246fc06ab9330c6">roboptim::Trajectory&lt; 3 &gt;::singularPoints_</a>.</p>
 
+<p>Referenced by <a class="el" href="a00028.html#a5f3b463a2804fa6db5cf421bd219a0a6">VectorInterpolation()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3b5acc21c88ee314b9ddf969c27fc93b"></a><!-- doxytag: member="roboptim::VectorInterpolation::singularPointAtRank" ref="a3b5acc21c88ee314b9ddf969c27fc93b" args="(size_type rank) const " -->
@@ -488,6 +534,46 @@ Protected Member Functions</h2></td></tr>
 <p>Get singular point at given rank. </p>
 
 <p>Implements <a class="el" href="a00025.html#a619dd773012986935cd7d2e146c0e049">roboptim::Trajectory&lt; 3 &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acdae21f9dc4bee85f382437d06cd561f"></a><!-- doxytag: member="roboptim::VectorInterpolation::trim" ref="acdae21f9dc4bee85f382437d06cd561f" args="(size_type start, size_type length) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; <a class="el" href="a00028.html">VectorInterpolation</a> &gt; <a class="el" href="a00028.html#acdae21f9dc4bee85f382437d06cd561f">roboptim::VectorInterpolation::trim</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00025.html#ae35019afe3d72d07d1b624eac832ede2">size_type</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Instantiate a trajectory corresponding to a sub-part of this trajectory. </p>
+<p>This function can be called to exclude some frames at the beginning and/or the end of the trajectory.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>starting frame (0 is the first frame) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">length</td><td>length of the output trajectory (0 means maximum length) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>build sub-trajectory (data are copied) </dd></dl>
+
+<p>References <a class="el" href="a00028.html#a567a98aa2ee6accd256468e5a833b0bd">numFrames()</a>, and <a class="el" href="a00025.html#ab6c0a684443a55738bfc2e47d5df592c">roboptim::Trajectory&lt; 3 &gt;::parameters()</a>.</p>
 
 </div>
 </div>

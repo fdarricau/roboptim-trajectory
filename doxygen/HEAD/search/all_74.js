@@ -24,13 +24,14 @@ var searchData=
   ['trajectory_3c_20t_3a_3aderivabilityorder_20_3e',['Trajectory< T::derivabilityOrder >',['../a00025.html',1,'roboptim']]],
   ['trajectory_5f',['trajectory_',['../a00026.html#a1fcac55e0be93c130db9ddfc6457c381',1,'roboptim::TrajectoryCost']]],
   ['trajectory_5ft',['trajectory_t',['../a00021.html#af2de134baefbfbef3ce8b1618d7ab153',1,'roboptim::StablePointStateFunction::trajectory_t()'],['../a00023.html#a17010521237325e087014a549c418cd3',1,'roboptim::StateFunction::trajectory_t()'],['../a00026.html#ad0b2be9f24cc110906215697a9a69a52',1,'roboptim::TrajectoryCost::trajectory_t()'],['../a00027.html#ad4fb3f8ec4865b9b461474b869485939',1,'roboptim::TrajectorySumCost::trajectory_t()']]],
-  ['trajectorycost',['TrajectoryCost',['../a00026.html',1,'roboptim']]],
   ['trajectorycost',['TrajectoryCost',['../a00026.html#a6d9d1399593c435c872ff1d125e13776',1,'roboptim::TrajectoryCost']]],
+  ['trajectorycost',['TrajectoryCost',['../a00026.html',1,'roboptim']]],
   ['trajectorycost_3c_20cubicbspline_20_3e',['TrajectoryCost< CubicBSpline >',['../a00026.html',1,'roboptim']]],
-  ['trajectorysumcost',['TrajectorySumCost',['../a00027.html',1,'roboptim']]],
   ['trajectorysumcost',['TrajectorySumCost',['../a00027.html#a7546e9b87c43f85847a08c84d5697225',1,'roboptim::TrajectorySumCost']]],
+  ['trajectorysumcost',['TrajectorySumCost',['../a00027.html',1,'roboptim']]],
   ['translate',['translate',['../a00019.html#a6ff0d9f7311ce508bc9e67b1d235b417',1,'roboptim::Polynomial']]],
   ['translatebasispolynomials',['translateBasisPolynomials',['../a00007.html#a6317258db0055f9d6d8ac20bb3a90e00',1,'roboptim::CubicBSpline']]],
   ['translateinplace',['translateInPlace',['../a00019.html#a5127ae88e3f1d94fe92673e6f4c45d09',1,'roboptim::Polynomial']]],
+  ['trim',['trim',['../a00028.html#acdae21f9dc4bee85f382437d06cd561f',1,'roboptim::VectorInterpolation']]],
   ['tunables_5f',['tunables_',['../a00006.html#a442bda188f2ac3578a19653415295557',1,'roboptim::ConstrainedBSpline']]]
 ];
