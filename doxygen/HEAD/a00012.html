@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::LimitOmega&lt; T &gt; Class Template Reference</title>
+<title>roboptim::trajectory::LimitOmega&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -62,48 +62,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::LimitOmega&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">roboptim::trajectory::LimitOmega&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::LimitOmega" --><!-- doxytag: inherits="DerivableFunction" -->
+<!-- doxytag: class="roboptim::trajectory::LimitOmega" --><!-- doxytag: inherits="DerivableFunction" -->
 <p><code>#include &lt;roboptim/trajectory/limit-omega.hh&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for roboptim::LimitOmega&lt; T &gt;:</div>
+Inheritance diagram for roboptim::trajectory::LimitOmega&lt; T &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00012.png" usemap="#roboptim::LimitOmega&lt; T &gt;_map" alt=""/>
-  <map id="roboptim::LimitOmega&lt; T &gt;_map" name="roboptim::LimitOmega&lt; T &gt;_map">
-<area href="a00008.html" alt="DerivableFunction" shape="rect" coords="0,0,162,24"/>
+  <img src="a00012.png" usemap="#roboptim::trajectory::LimitOmega&lt; T &gt;_map" alt=""/>
+  <map id="roboptim::trajectory::LimitOmega&lt; T &gt;_map" name="roboptim::trajectory::LimitOmega&lt; T &gt;_map">
+<area href="a00008.html" alt="DerivableFunction" shape="rect" coords="0,0,222,24"/>
 </map>
  </div></div>
 
-<p><a href="a00099.html">List of all members.</a></p>
+<p><a href="a00102.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#ab01f410631c3a1e2495e53f628dc214d">LimitOmega</a> (<a class="el" href="a00022.html">StableTimePoint</a> timePoint, const T &amp;trajectory)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#adfd8abc74ec146f4ee7000bbc0b6b764">~LimitOmega</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a4d1ff7d608e043162ee56a55cbf57ebd">LimitOmega</a> (<a class="el" href="a00022.html">StableTimePoint</a> timePoint, const T &amp;trajectory)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a6c6d612d26ef73913364b67e4b51825a">~LimitOmega</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename F , typename CLIST &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00012.html#aaa6fb90cf3867d0477bced341c200aa9">addToProblem</a> (const T &amp;trajectory, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t vRange, unsigned nConstraints)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00012.html#a72551d08f9ff635e9efbdad93d49fddc">addToProblem</a> (const T &amp;trajectory, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t vRange, unsigned nConstraints)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a0ffb2ac4ac3a3627d500ba1f81568b60">impl_compute</a> (result_t &amp;res, const argument_t &amp;p) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a8b9a5b7700a2e68c20366a713942b959">impl_gradient</a> (gradient_t &amp;grad, const argument_t &amp;p, size_type i) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#aadb42c249f2dbe88873458ed0f298a65">impl_compute</a> (result_t &amp;res, const argument_t &amp;p) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a733583a66ebe2cd46a36b85cf20c38b6">impl_gradient</a> (gradient_t &amp;grad, const argument_t &amp;p, size_type i) const </td></tr>
 </table>
 <h3>template&lt;typename T&gt;<br/>
- class roboptim::LimitOmega&lt; T &gt;</h3>
+ class roboptim::trajectory::LimitOmega&lt; T &gt;</h3>
 
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab01f410631c3a1e2495e53f628dc214d"></a><!-- doxytag: member="roboptim::LimitOmega::LimitOmega" ref="ab01f410631c3a1e2495e53f628dc214d" args="(StableTimePoint timePoint, const T &amp;trajectory)" -->
+<a class="anchor" id="a4d1ff7d608e043162ee56a55cbf57ebd"></a><!-- doxytag: member="roboptim::trajectory::LimitOmega::LimitOmega" ref="a4d1ff7d608e043162ee56a55cbf57ebd" args="(StableTimePoint timePoint, const T &amp;trajectory)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html">LimitOmega</a> </td>
+          <td class="memname"><a class="el" href="a00012.html">roboptim::trajectory::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html">LimitOmega</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td>
           <td class="paramname"><em>timePoint</em>, </td>
@@ -125,14 +125,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adfd8abc74ec146f4ee7000bbc0b6b764"></a><!-- doxytag: member="roboptim::LimitOmega::~LimitOmega" ref="adfd8abc74ec146f4ee7000bbc0b6b764" args="()" -->
+<a class="anchor" id="a6c6d612d26ef73913364b67e4b51825a"></a><!-- doxytag: member="roboptim::trajectory::LimitOmega::~LimitOmega" ref="a6c6d612d26ef73913364b67e4b51825a" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::~<a class="el" href="a00012.html">LimitOmega</a> </td>
+          <td class="memname"><a class="el" href="a00012.html">roboptim::trajectory::LimitOmega</a>&lt; T &gt;::~<a class="el" href="a00012.html">LimitOmega</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -144,7 +144,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aaa6fb90cf3867d0477bced341c200aa9"></a><!-- doxytag: member="roboptim::LimitOmega::addToProblem" ref="aaa6fb90cf3867d0477bced341c200aa9" args="(const T &amp;trajectory, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t vRange, unsigned nConstraints)" -->
+<a class="anchor" id="a72551d08f9ff635e9efbdad93d49fddc"></a><!-- doxytag: member="roboptim::trajectory::LimitOmega::addToProblem" ref="a72551d08f9ff635e9efbdad93d49fddc" args="(const T &amp;trajectory, Problem&lt; F, CLIST &gt; &amp;problem, typename Function::interval_t vRange, unsigned nConstraints)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -153,7 +153,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename F , typename CLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#aaa6fb90cf3867d0477bced341c200aa9">addToProblem</a> </td>
+          <td class="memname">void <a class="el" href="a00012.html">roboptim::trajectory::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#a72551d08f9ff635e9efbdad93d49fddc">addToProblem</a> </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>trajectory</em>, </td>
@@ -185,18 +185,18 @@ template&lt;typename F , typename CLIST &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00078.html#a1d9d4bd345b077d1874736f67e3f135e">roboptim::tMax</a>.</p>
+<p>References <a class="el" href="a00079.html#abe3251b6da4e42a50d2716a77c8a2647">roboptim::trajectory::tMax</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0ffb2ac4ac3a3627d500ba1f81568b60"></a><!-- doxytag: member="roboptim::LimitOmega::impl_compute" ref="a0ffb2ac4ac3a3627d500ba1f81568b60" args="(result_t &amp;res, const argument_t &amp;p) const " -->
+<a class="anchor" id="aadb42c249f2dbe88873458ed0f298a65"></a><!-- doxytag: member="roboptim::trajectory::LimitOmega::impl_compute" ref="aadb42c249f2dbe88873458ed0f298a65" args="(result_t &amp;res, const argument_t &amp;p) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#a0ffb2ac4ac3a3627d500ba1f81568b60">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00012.html">roboptim::trajectory::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#aadb42c249f2dbe88873458ed0f298a65">impl_compute</a> </td>
           <td>(</td>
           <td class="paramtype">result_t &amp;&#160;</td>
           <td class="paramname"><em>res</em>, </td>
@@ -219,14 +219,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8b9a5b7700a2e68c20366a713942b959"></a><!-- doxytag: member="roboptim::LimitOmega::impl_gradient" ref="a8b9a5b7700a2e68c20366a713942b959" args="(gradient_t &amp;grad, const argument_t &amp;p, size_type i) const " -->
+<a class="anchor" id="a733583a66ebe2cd46a36b85cf20c38b6"></a><!-- doxytag: member="roboptim::trajectory::LimitOmega::impl_gradient" ref="a733583a66ebe2cd46a36b85cf20c38b6" args="(gradient_t &amp;grad, const argument_t &amp;p, size_type i) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00012.html">roboptim::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#a8b9a5b7700a2e68c20366a713942b959">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00012.html">roboptim::trajectory::LimitOmega</a>&lt; T &gt;::<a class="el" href="a00012.html#a733583a66ebe2cd46a36b85cf20c38b6">impl_gradient</a> </td>
           <td>(</td>
           <td class="paramtype">gradient_t &amp;&#160;</td>
           <td class="paramname"><em>grad</em>, </td>
@@ -274,6 +274,7 @@ template&lt;typename T &gt; </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="a00078.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00079.html">trajectory</a>      </li>
       <li class="navelem"><a class="el" href="a00012.html">LimitOmega</a>      </li>
 </body>
 </html>

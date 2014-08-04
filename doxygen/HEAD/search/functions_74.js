@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['t0',['t0',['../a00019.html#aba1dc041201a06d7e967fcbb261541ba',1,'roboptim::Polynomial::t0() const '],['../a00019.html#aad8ba7668a23226c587220430e64226e',1,'roboptim::Polynomial::t0()']]],
-  ['timerange',['timeRange',['../a00025.html#ad9f7c97440a329f98b2407e8cc924387',1,'roboptim::Trajectory']]],
-  ['timescale',['timeScale',['../a00009.html#a57d61937728cef8053f7e2b307e8e548',1,'roboptim::FreeTimeTrajectory']]],
-  ['tolerance',['tolerance',['../a00025.html#ab9e92c163f5375bf614335dd409cea39',1,'roboptim::Trajectory::tolerance(const double &amp;tolerance)'],['../a00025.html#a4200380e77c7c4a9dba8112d8793676b',1,'roboptim::Trajectory::tolerance() const ']]],
-  ['topolynomials',['toPolynomials',['../a00007.html#af61810802d57b58005354191b534d1bc',1,'roboptim::CubicBSpline']]],
-  ['trajectory',['Trajectory',['../a00025.html#ab2ca30e7b7d57fc0adc381b124a20100',1,'roboptim::Trajectory::Trajectory()'],['../a00013.html#aa6c7f02eb97dd9fc3dee5263251c7c27',1,'roboptim::LimitSpeed::trajectory()']]],
-  ['trajectorycost',['TrajectoryCost',['../a00026.html#a6d9d1399593c435c872ff1d125e13776',1,'roboptim::TrajectoryCost']]],
-  ['trajectorysumcost',['TrajectorySumCost',['../a00027.html#a7546e9b87c43f85847a08c84d5697225',1,'roboptim::TrajectorySumCost']]],
-  ['translate',['translate',['../a00019.html#a6ff0d9f7311ce508bc9e67b1d235b417',1,'roboptim::Polynomial']]],
-  ['translatebasispolynomials',['translateBasisPolynomials',['../a00007.html#a6317258db0055f9d6d8ac20bb3a90e00',1,'roboptim::CubicBSpline']]],
-  ['translateinplace',['translateInPlace',['../a00019.html#a5127ae88e3f1d94fe92673e6f4c45d09',1,'roboptim::Polynomial']]],
-  ['trim',['trim',['../a00028.html#acdae21f9dc4bee85f382437d06cd561f',1,'roboptim::VectorInterpolation']]]
+  ['t0',['t0',['../a00019.html#ab7438705bb8f24644d7af2f7e5618645',1,'roboptim::trajectory::Polynomial::t0() const '],['../a00019.html#a8be7bcf3651455d56e71409a66fb06b2',1,'roboptim::trajectory::Polynomial::t0()']]],
+  ['timerange',['timeRange',['../a00025.html#a62f48320625ff2e9082b987e07dceed1',1,'roboptim::trajectory::Trajectory']]],
+  ['timescale',['timeScale',['../a00009.html#aadb5930db34f80ba308cfe8f9e3b0b2a',1,'roboptim::trajectory::FreeTimeTrajectory']]],
+  ['tolerance',['tolerance',['../a00025.html#a0dffd52bdd3996425cf2c90ffa7a2676',1,'roboptim::trajectory::Trajectory::tolerance(const double &amp;tolerance)'],['../a00025.html#a7245be382cbb22c91e107d52167a974c',1,'roboptim::trajectory::Trajectory::tolerance() const ']]],
+  ['topolynomials',['toPolynomials',['../a00007.html#a40f8264ab0a66a134a125a299dcd7929',1,'roboptim::trajectory::CubicBSpline']]],
+  ['trajectory',['trajectory',['../a00013.html#a62f4a951500d9207d8ee81b7338dcc60',1,'roboptim::trajectory::LimitSpeed::trajectory()'],['../a00025.html#a46f0104da7e14c3bdf8e5d011148371a',1,'roboptim::trajectory::Trajectory::Trajectory()']]],
+  ['trajectorycost',['TrajectoryCost',['../a00026.html#ae81c182c25b83d09c57de194075d2db6',1,'roboptim::trajectory::TrajectoryCost']]],
+  ['trajectorysumcost',['TrajectorySumCost',['../a00027.html#ae97b707e0dee63d17fefa00ea6feb9eb',1,'roboptim::trajectory::TrajectorySumCost']]],
+  ['translate',['translate',['../a00019.html#a9b488d87a85c5fa46725050183ea3f7a',1,'roboptim::trajectory::Polynomial']]],
+  ['translatebasispolynomials',['translateBasisPolynomials',['../a00007.html#a772ea92914326431811d08798f553e1f',1,'roboptim::trajectory::CubicBSpline']]],
+  ['translateinplace',['translateInPlace',['../a00019.html#a5c47704f613f1a5588e365b1c3749b91',1,'roboptim::trajectory::Polynomial']]],
+  ['trim',['trim',['../a00028.html#a0a1c092cd6950d5d45ef160584a88431',1,'roboptim::trajectory::VectorInterpolation']]]
 ];

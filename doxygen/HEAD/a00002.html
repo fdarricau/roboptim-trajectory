@@ -95,6 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="preprocessor">#include &quot;shared-tests/common.hh&quot;</span>
 
 <span class="keyword">using namespace </span>roboptim;
+<span class="keyword">using namespace </span>roboptim::trajectory;
 <span class="keyword">using namespace </span>roboptim::visualization;
 <span class="keyword">using namespace </span>roboptim::visualization::gnuplot;
 
@@ -116,19 +117,19 @@ test_solver_t;
     &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline (4.)) &lt;&lt; std::endl
 
     &lt;&lt; <span class="stringliteral">&quot;# 1st derivative:&quot;</span> &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a name="a1"></a><a class="code" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> (0., 1)) &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> (2.5, 1)) &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> (4., 1)) &lt;&lt; std::endl
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a name="a1"></a><a class="code" href="a00025.html#aa1697de00fadfd86859ddf5a8a0107a2">derivative</a> (0., 1)) &lt;&lt; std::endl
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#aa1697de00fadfd86859ddf5a8a0107a2">derivative</a> (2.5, 1)) &lt;&lt; std::endl
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#aa1697de00fadfd86859ddf5a8a0107a2">derivative</a> (4., 1)) &lt;&lt; std::endl
 
     &lt;&lt; <span class="stringliteral">&quot;# 2nd derivative:&quot;</span> &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> (0., 2)) &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> (2.5, 2)) &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#a37d249123851924155a46cb8c0a62dbc">derivative</a> (4., 2)) &lt;&lt; std::endl
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#aa1697de00fadfd86859ddf5a8a0107a2">derivative</a> (0., 2)) &lt;&lt; std::endl
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#aa1697de00fadfd86859ddf5a8a0107a2">derivative</a> (2.5, 2)) &lt;&lt; std::endl
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00025.html#aa1697de00fadfd86859ddf5a8a0107a2">derivative</a> (4., 2)) &lt;&lt; std::endl
 
     &lt;&lt; <span class="stringliteral">&quot;# variationConfigWrtParam:&quot;</span> &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a name="a2"></a><a class="code" href="a00007.html#adcf137d2f85a0dea72f1b01eac4db32e" title="Get the variation of a configuration with respect to parameter vector.">variationConfigWrtParam</a> (0.)) &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00007.html#adcf137d2f85a0dea72f1b01eac4db32e" title="Get the variation of a configuration with respect to parameter vector.">variationConfigWrtParam</a> (2.5)) &lt;&lt; std::endl
-    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00007.html#adcf137d2f85a0dea72f1b01eac4db32e" title="Get the variation of a configuration with respect to parameter vector.">variationConfigWrtParam</a> (4.)) &lt;&lt; std::endl;
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a name="a2"></a><a class="code" href="a00007.html#ac41fb38a329d1897b8b0ca0491b71717" title="Get the variation of a configuration with respect to parameter vector.">variationConfigWrtParam</a> (0.)) &lt;&lt; std::endl
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00007.html#ac41fb38a329d1897b8b0ca0491b71717" title="Get the variation of a configuration with respect to parameter vector.">variationConfigWrtParam</a> (2.5)) &lt;&lt; std::endl
+    &lt;&lt; <span class="stringliteral">&quot;# &quot;</span> &lt;&lt; normalize (spline.<a class="code" href="a00007.html#ac41fb38a329d1897b8b0ca0491b71717" title="Get the variation of a configuration with respect to parameter vector.">variationConfigWrtParam</a> (4.)) &lt;&lt; std::endl;
 }
 
 BOOST_FIXTURE_TEST_SUITE (trajectory, TestSuiteConfiguration)
@@ -136,7 +137,7 @@ BOOST_FIXTURE_TEST_SUITE (trajectory, TestSuiteConfiguration)
 BOOST_AUTO_TEST_CASE (trajectory_spline_optimization)
 {
   <span class="keyword">using namespace </span>boost::assign;
-  <a name="a3"></a><a class="code" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca" title="Import vector type.">CubicBSpline::vector_t</a> params (16);
+  CubicBSpline::vector_t params (16);
 
   <span class="comment">// Initial position.</span>
   params[0] = 0.,  params[1] = 0.;
@@ -151,7 +152,7 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_optimization)
   params[12] = 100., params[13] = 100.;
   params[14] = 100., params[15] = 100.;
 
-  <a name="a4"></a><a class="code" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375" title="Import interval type.">CubicBSpline::interval_t</a> timeRange = CubicBSpline::makeInterval (0., 4.);
+  CubicBSpline::interval_t timeRange = CubicBSpline::makeInterval (0., 4.);
 
   <a class="code" href="a00007.html" title="Cubic B-Spline trajectory.">CubicBSpline</a> spline (timeRange, 2, params, <span class="stringliteral">&quot;before&quot;</span>);
   discreteInterval_t interval (0., 4., 0.01);
@@ -162,10 +163,10 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_optimization)
   gnuplot
     &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;multiplot layout 1,2&quot;</span>)
     &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;grid&quot;</span>)
-    &lt;&lt; <a name="a5"></a><a class="code" href="a00082.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (spline);
+    &lt;&lt; <a name="a3"></a><a class="code" href="a00083.html#a5b01bc5d17e580b1e76aad90f5c32ad3" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (spline);
 
   <span class="comment">// Optimize.</span>
-  <a name="_a6"></a><a class="code" href="a00020.html" title="Approximate the length of a Spline.">SplineLength</a> cost (spline);
+  <a name="_a4"></a><a class="code" href="a00020.html" title="Approximate the length of a Spline.">SplineLength</a> cost (spline);
 
   <span class="comment">// Check cost gradient.</span>
   <span class="keywordflow">try</span>
@@ -186,8 +187,8 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_optimization)
   test_solver_t::problem_t problem (cost);
   problem.startingPoint () = params;
 
-  spline.<a name="a7"></a><a class="code" href="a00007.html#a2c34cf69e8a7d4e4d70faec6c67776f6" title="Add a constraint to a problem in order to freeze the B-spline at its start.">freezeCurveStart</a> (problem);
-  spline.<a name="a8"></a><a class="code" href="a00007.html#a723ba4453c80d67132b3734593cb0adb" title="Add a constraint to a problem in order to freeze the B-spline at its end.">freezeCurveEnd</a> (problem);
+  spline.<a name="a5"></a><a class="code" href="a00007.html#abc14838d388224842fa25defba51c6a4" title="Add a constraint to a problem in order to freeze the B-spline at its start.">freezeCurveStart</a> (problem);
+  spline.<a name="a6"></a><a class="code" href="a00007.html#a743ad87d377a89f70e61222aeac14ca2" title="Add a constraint to a problem in order to freeze the B-spline at its end.">freezeCurveEnd</a> (problem);
 
   SolverFactory&lt;test_solver_t&gt; factory (TESTSUITE_SOLVER, problem);
   test_solver_t&amp; solver = factory ();
@@ -210,7 +211,7 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_optimization)
   <a class="code" href="a00007.html" title="Cubic B-Spline trajectory.">CubicBSpline</a> optimizedSpline (timeRange, 2, result.x, <span class="stringliteral">&quot;after&quot;</span>);
   showSpline (optimizedSpline);
   params = result.x;
-  gnuplot &lt;&lt; <a class="code" href="a00082.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (optimizedSpline);
+  gnuplot &lt;&lt; <a class="code" href="a00083.html#a5b01bc5d17e580b1e76aad90f5c32ad3" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (optimizedSpline);
   <span class="keywordflow">break</span>;
       }
 
@@ -226,7 +227,7 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_optimization)
   showSpline (optimizedSpline);
   params = result.x;
   std::cerr &lt;&lt; result &lt;&lt; std::endl;
-  gnuplot &lt;&lt; <a class="code" href="a00082.html#a8470b3cde9bc3f5c8bda1de059a469f4" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (optimizedSpline);
+  gnuplot &lt;&lt; <a class="code" href="a00083.html#a5b01bc5d17e580b1e76aad90f5c32ad3" title="Plot a 2D trajectory with Gnuplot.">plot_xy</a> (optimizedSpline);
   <span class="keywordflow">break</span>;
       }
 

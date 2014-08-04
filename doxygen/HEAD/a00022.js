@@ -1,7 +1,7 @@
 var a00022 =
 [
-    [ "value_type", "a00022.html#acb0f8ed986e00d147084d90fe81256ba", null ],
-    [ "StableTimePoint", "a00022.html#a3bf4b9a6044b9d81378d935bddda3d06", null ],
-    [ "getAlpha", "a00022.html#ac224524284ba191a8282e5b1b8eb31a3", null ],
-    [ "getTime", "a00022.html#ad56b244310ce512b8d9d736ebc5130cc", null ]
+    [ "value_type", "a00022.html#a6f8dcd21fb48d9ab1c08571a44e6ca4f", null ],
+    [ "StableTimePoint", "a00022.html#a23c93477d0b8fd06e9dc4d7a79e19e64", null ],
+    [ "getAlpha", "a00022.html#acd225112661a26ad47628368dbcfe4fb", null ],
+    [ "getTime", "a00022.html#a3723a5dd33cd2dea7af9598d50f141cc", null ]
 ];

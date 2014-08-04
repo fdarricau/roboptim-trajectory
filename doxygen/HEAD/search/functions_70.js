@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['parameters',['parameters',['../a00006.html#ac41f0f974801a22609a4d0b35196a686',1,'roboptim::ConstrainedBSpline::parameters()'],['../a00025.html#ab6c0a684443a55738bfc2e47d5df592c',1,'roboptim::Trajectory::parameters()']]],
-  ['plot_5flimitspeed',['plot_limitSpeed',['../a00082.html#aad07f0f1d78793149fea1a519a578738',1,'roboptim::visualization::gnuplot']]],
-  ['plot_5fspeeds',['plot_speeds',['../a00082.html#af0c2649b3ea630e1aed8ac2dde4d6495',1,'roboptim::visualization::gnuplot']]],
-  ['plot_5fxy',['plot_xy',['../a00082.html#a8470b3cde9bc3f5c8bda1de059a469f4',1,'roboptim::visualization::gnuplot']]],
-  ['plot_5fxytheta',['plot_xytheta',['../a00082.html#a10e4af94da20e9c1e65d68c85a15f6d5',1,'roboptim::visualization::gnuplot']]],
-  ['plotlimitspeed',['PlotLimitSpeed',['../a00017.html#a0d9a76260d315aeb2ab8bd275a9e9b07',1,'roboptim::visualization::gnuplot::detail::PlotLimitSpeed']]],
-  ['plottrajectory',['PlotTrajectory',['../a00018.html#aa705abbf968f28cd49cd86ad925b79ce',1,'roboptim::visualization::gnuplot::detail::PlotTrajectory']]],
-  ['polynomial',['Polynomial',['../a00019.html#a657ec7d47dc937be37e0081c1bb319fb',1,'roboptim::Polynomial::Polynomial()'],['../a00019.html#a939ecdd9e19708828f506120672f5770',1,'roboptim::Polynomial::Polynomial(value_type t0, const vector_t &amp;coefs)'],['../a00019.html#a824f746ffedcb1155a720ab54cda82c5',1,'roboptim::Polynomial::Polynomial(value_type t0,...)'],['../a00019.html#a233850918a67a2556cb481b260272a02',1,'roboptim::Polynomial::Polynomial(const Polynomial&lt; M &gt; &amp;p)'],['../a00019.html#a537a1e4aa6ca54fdce2214dea7de074f',1,'roboptim::Polynomial::Polynomial(value_type t0, special_polynomials key)']]],
-  ['print',['print',['../a00004.html#aff2b4f4bfb8aeb8c54c26bc3ce880e34',1,'roboptim::BSpline::print()'],['../a00007.html#a3e974fa06743e37072efc0d639e4e8c6',1,'roboptim::CubicBSpline::print()'],['../a00009.html#a4699fe0183b9d707f05fb964df145cac',1,'roboptim::FreeTimeTrajectory::print()'],['../a00025.html#a9fdf55675206c496ae578fdc741d0e03',1,'roboptim::Trajectory::print()']]]
+  ['parameters',['parameters',['../a00006.html#a44570f2e4474fb71dab08086d5d3d325',1,'roboptim::trajectory::ConstrainedBSpline::parameters()'],['../a00025.html#a856ce857a44632e4a1776f800e7e3189',1,'roboptim::trajectory::Trajectory::parameters()']]],
+  ['plot_5flimitspeed',['plot_limitSpeed',['../a00083.html#a94f9e8f8213cb72af5e9e1e578810a02',1,'roboptim::trajectory::visualization::gnuplot']]],
+  ['plot_5fspeeds',['plot_speeds',['../a00083.html#a2e5e1532e6ff138bdb1fcc63abd6f1a7',1,'roboptim::trajectory::visualization::gnuplot']]],
+  ['plot_5fxy',['plot_xy',['../a00083.html#a5b01bc5d17e580b1e76aad90f5c32ad3',1,'roboptim::trajectory::visualization::gnuplot']]],
+  ['plot_5fxytheta',['plot_xytheta',['../a00083.html#a8a28e77bda478112ce618f14d81718e7',1,'roboptim::trajectory::visualization::gnuplot']]],
+  ['plotlimitspeed',['PlotLimitSpeed',['../a00017.html#a90a122df9f6deb6e3c81120496f3855e',1,'roboptim::trajectory::visualization::gnuplot::detail::PlotLimitSpeed']]],
+  ['plottrajectory',['PlotTrajectory',['../a00018.html#a63af9304ab122b602a1746ac3accc9ec',1,'roboptim::trajectory::visualization::gnuplot::detail::PlotTrajectory']]],
+  ['polynomial',['Polynomial',['../a00019.html#a65303805be2d2beeee986b6a8223c3a9',1,'roboptim::trajectory::Polynomial::Polynomial()'],['../a00019.html#a30d2b0f0213f8108287ebf7835986561',1,'roboptim::trajectory::Polynomial::Polynomial(value_type t0, const vector_t &amp;coefs)'],['../a00019.html#a5ea3718ae7fd8dd42e05d67ac3aac5b1',1,'roboptim::trajectory::Polynomial::Polynomial(value_type t0,...)'],['../a00019.html#a7ea5b6aaf4f8fb128f7af10655200d17',1,'roboptim::trajectory::Polynomial::Polynomial(const Polynomial&lt; M &gt; &amp;p)'],['../a00019.html#aab799133b2498063a3c12a340e8a749f',1,'roboptim::trajectory::Polynomial::Polynomial(value_type t0, special_polynomials key)']]],
+  ['print',['print',['../a00004.html#a377c763e0fb8953c88207eaa4ee9a8bd',1,'roboptim::trajectory::BSpline::print()'],['../a00007.html#a31ae4ffcf59cbe5ce6bea4cca8d9d14e',1,'roboptim::trajectory::CubicBSpline::print()'],['../a00009.html#a3f0725b1d4a3a7329a8c3da204d8a669',1,'roboptim::trajectory::FreeTimeTrajectory::print()'],['../a00025.html#a469e65011dcd3c2daab15e623f90189e',1,'roboptim::trajectory::Trajectory::print()']]]
 ];

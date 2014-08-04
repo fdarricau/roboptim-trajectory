@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['self_5ft',['self_t',['../a00009.html#a04339e5137c9e284f810b7b3139ef886',1,'roboptim::FreeTimeTrajectory']]],
-  ['size_5ftype',['size_type',['../a00004.html#a6dc760276c2d9274db8193d3fec54de1',1,'roboptim::BSpline::size_type()'],['../a00006.html#a41e2d999e00a13f5c106d1981232d4a8',1,'roboptim::ConstrainedBSpline::size_type()'],['../a00009.html#a2640aaad67b102c46401bcc5b2f2868c',1,'roboptim::FreeTimeTrajectory::size_type()'],['../a00019.html#a39933631d02811c977ab6f96e4b7b6cd',1,'roboptim::Polynomial::size_type()'],['../a00025.html#ae35019afe3d72d07d1b624eac832ede2',1,'roboptim::Trajectory::size_type()']]]
+  ['self_5ft',['self_t',['../a00009.html#ac3b4d3653c4f1b316b17804d07cecc2d',1,'roboptim::trajectory::FreeTimeTrajectory']]],
+  ['size_5ftype',['size_type',['../a00004.html#a56a863df4b355224d6533b5db71ee2eb',1,'roboptim::trajectory::BSpline::size_type()'],['../a00006.html#a1f7f8d9fd1aba8396992de1c3da32818',1,'roboptim::trajectory::ConstrainedBSpline::size_type()'],['../a00009.html#accd8925e7af54401ab25a749dc62d18e',1,'roboptim::trajectory::FreeTimeTrajectory::size_type()'],['../a00019.html#adc5c9e0b1b1c112447d4307a907810d7',1,'roboptim::trajectory::Polynomial::size_type()'],['../a00025.html#a0d467d769041b181340d519462cd853f',1,'roboptim::trajectory::Trajectory::size_type()']]]
 ];

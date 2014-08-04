@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gradient_5ft',['gradient_t',['../a00004.html#a6f3b8e2ccf72b17205c00f56bfaef4cf',1,'roboptim::BSpline::gradient_t()'],['../a00009.html#ad623d5a52ea1a42e4462a2963e60616f',1,'roboptim::FreeTimeTrajectory::gradient_t()'],['../a00027.html#a0528dabf8268e40db79ee63f76739198',1,'roboptim::TrajectorySumCost::gradient_t()'],['../a00025.html#acf4bc47abdb6e0adf131ee477dfbe2bb',1,'roboptim::Trajectory::gradient_t()']]]
+  ['gradient_5ft',['gradient_t',['../a00004.html#a42a9f26297244f36551cc877ea5b4430',1,'roboptim::trajectory::BSpline::gradient_t()'],['../a00009.html#a75ac93f7431cd018b4ae6917e42fb57a',1,'roboptim::trajectory::FreeTimeTrajectory::gradient_t()'],['../a00027.html#a34609933f35015231dc5065ad536923c',1,'roboptim::trajectory::TrajectorySumCost::gradient_t()'],['../a00025.html#ae1beb6910537e6dd9629c2bf8978ab86',1,'roboptim::trajectory::Trajectory::gradient_t()']]]
 ];

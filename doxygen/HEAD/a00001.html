@@ -100,6 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="preprocessor">#include &quot;shared-tests/common.hh&quot;</span>
 
 <span class="keyword">using namespace </span>roboptim;
+<span class="keyword">using namespace </span>roboptim::trajectory;
 <span class="keyword">using namespace </span>roboptim::visualization;
 <span class="keyword">using namespace </span>roboptim::visualization::gnuplot;
 
@@ -125,7 +126,7 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_time_optimization)
   <span class="keyword">using namespace </span>boost::assign;
 
   <span class="keyword">const</span> <span class="keywordtype">double</span> finalPos = 200.;
-  <a name="a1"></a><a class="code" href="a00025.html#a62c888c5fdcdf698afc4b7a97db784ca" title="Import vector type.">CubicBSpline::vector_t</a> params (nControlPoints);
+  CubicBSpline::vector_t params (nControlPoints);
 
   params[0] = 0;
   params[1] = 0;
@@ -135,8 +136,8 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_time_optimization)
   params[nControlPoints-1] = finalPos;
 
   <span class="comment">// Make trajectories.</span>
-  <a name="a2"></a><a class="code" href="a00025.html#a2722b17c64a0f01a73cfaf56b9188375" title="Import interval type.">CubicBSpline::interval_t</a> timeRange = CubicBSpline::makeInterval (0., 4.);
-  <a name="_a3"></a><a class="code" href="a00007.html" title="Cubic B-Spline trajectory.">CubicBSpline</a> spline (timeRange, 1, params, <span class="stringliteral">&quot;before&quot;</span>);
+  CubicBSpline::interval_t timeRange = CubicBSpline::makeInterval (0., 4.);
+  <a name="_a1"></a><a class="code" href="a00007.html" title="Cubic B-Spline trajectory.">CubicBSpline</a> spline (timeRange, 1, params, <span class="stringliteral">&quot;before&quot;</span>);
   freeTime_t freeTimeTraj (spline, 1.);
 
   <span class="comment">// Define cost.</span>
@@ -156,11 +157,11 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_time_optimization)
 
   <span class="keyword">const</span> freeTime_t::vector_t freeTimeParams = freeTimeTraj.parameters ();
 
-  spline.<a name="a4"></a><a class="code" href="a00007.html#a2c34cf69e8a7d4e4d70faec6c67776f6" title="Add a constraint to a problem in order to freeze the B-spline at its start.">freezeCurveStart</a> (problem, 1);
-  spline.<a name="a5"></a><a class="code" href="a00007.html#a723ba4453c80d67132b3734593cb0adb" title="Add a constraint to a problem in order to freeze the B-spline at its end.">freezeCurveEnd</a> (problem, 1);
+  spline.<a name="a2"></a><a class="code" href="a00007.html#abc14838d388224842fa25defba51c6a4" title="Add a constraint to a problem in order to freeze the B-spline at its start.">freezeCurveStart</a> (problem, 1);
+  spline.<a name="a3"></a><a class="code" href="a00007.html#a743ad87d377a89f70e61222aeac14ca2" title="Add a constraint to a problem in order to freeze the B-spline at its end.">freezeCurveEnd</a> (problem, 1);
 
   Function::interval_t vRange = Function::makeUpperInterval (.5 * vMax * vMax);
-  <a name="_a6"></a><a class="code" href="a00013.html">LimitSpeed&lt;FreeTimeTrajectory&lt;CubicBSpline&gt;</a> &gt;::addToProblem
+  <a name="_a4"></a><a class="code" href="a00013.html">LimitSpeed&lt;FreeTimeTrajectory&lt;CubicBSpline&gt;</a> &gt;::addToProblem
     (freeTimeTraj, problem, vRange, nControlPoints * nConstraintsPerCtrlPts);
 
   std::ofstream limitSpeedStream (<span class="stringliteral">&quot;limit-speed.gp&quot;</span>);
@@ -170,7 +171,7 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_time_optimization)
     &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;multiplot layout 1,2 title &quot;</span>
       <span class="stringliteral">&quot;&#39;variation of speed before and after optimization&#39;&quot;</span>)
     &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;grid&quot;</span>);
-  gnuplot &lt;&lt; <a name="a7"></a><a class="code" href="a00082.html#aad07f0f1d78793149fea1a519a578738" title="Plot a speed limit constraint.">plot_limitSpeed</a> (freeTimeTraj, vMax);
+  gnuplot &lt;&lt; <a name="a5"></a><a class="code" href="a00083.html#a94f9e8f8213cb72af5e9e1e578810a02" title="Plot a speed limit constraint.">plot_limitSpeed</a> (freeTimeTraj, vMax);
 
 
   SolverFactory&lt;test_solver_t&gt; factory (TESTSUITE_SOLVER, problem);
@@ -200,7 +201,7 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_time_optimization)
     <span class="keywordflow">case</span> GenericSolver::SOLVER_VALUE:
       {
   <span class="keyword">const</span> Result&amp; result = solver.getMinimum&lt;Result&gt; ();
-  optimizedTrajectory.<a name="a8"></a><a class="code" href="a00009.html#a91c66089ea69347f6b2d2e61c0e1e54b" title="Set parameters.">setParameters</a> (result.x);
+  optimizedTrajectory.<a name="a6"></a><a class="code" href="a00009.html#aaa234352d4fc2c6a1dc6bcc3c151ebff" title="Set parameters.">setParameters</a> (result.x);
   <span class="keywordflow">break</span>;
       }
 
@@ -217,7 +218,7 @@ BOOST_AUTO_TEST_CASE (trajectory_spline_time_optimization)
       BOOST_CHECK(<span class="keyword">false</span>);
     }
 
-  gnuplot &lt;&lt; <a class="code" href="a00082.html#aad07f0f1d78793149fea1a519a578738" title="Plot a speed limit constraint.">plot_limitSpeed</a> (optimizedTrajectory, vMax);
+  gnuplot &lt;&lt; <a class="code" href="a00083.html#a94f9e8f8213cb72af5e9e1e578810a02" title="Plot a speed limit constraint.">plot_limitSpeed</a> (optimizedTrajectory, vMax);
   limitSpeedStream &lt;&lt; (gnuplot &lt;&lt; unset (<span class="stringliteral">&quot;multiplot&quot;</span>));
 }
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['special_5fpolynomials',['special_polynomials',['../a00019.html#ab8517f56366fa53134976efa1069a141',1,'roboptim::Polynomial']]]
+  ['special_5fpolynomials',['special_polynomials',['../a00019.html#a0184bffd60b7f3cbddaa8b78596577a5',1,'roboptim::trajectory::Polynomial']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unscaleinterval',['unscaleInterval',['../a00080.html#a52ba18d87cef70c3783bf6bf86ba1100',1,'roboptim::detail']]],
-  ['unscaletime',['unscaleTime',['../a00009.html#a32dcce2b55ef298a2a338dd52083dc64',1,'roboptim::FreeTimeTrajectory::unscaleTime()'],['../a00080.html#ae275d124d42d540fb4cb060aa4e4322f',1,'roboptim::detail::unscaleTime()']]],
-  ['updateprojector',['updateProjector',['../a00006.html#a5b832ee207f143c3e555ef9efbe4f2b4',1,'roboptim::ConstrainedBSpline']]]
+  ['unscaleinterval',['unscaleInterval',['../a00081.html#ad64e1ac40369aeb6e52b696c1cf347dc',1,'roboptim::trajectory::detail']]],
+  ['unscaletime',['unscaleTime',['../a00009.html#a36898b1bcb81d201e16276310914101e',1,'roboptim::trajectory::FreeTimeTrajectory::unscaleTime()'],['../a00081.html#a79732307f303786d8c149e5295828128',1,'roboptim::trajectory::detail::unscaleTime()']]],
+  ['updateprojector',['updateProjector',['../a00006.html#a9b1e80c5b16f8554eb8d80a191d0e1b4',1,'roboptim::trajectory::ConstrainedBSpline']]]
 ];

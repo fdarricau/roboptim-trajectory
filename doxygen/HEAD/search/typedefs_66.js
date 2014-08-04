@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fixedtimetrajectory_5ft',['fixedTimeTrajectory_t',['../a00009.html#aefcb80d9ceb3dd740a05598171325379',1,'roboptim::FreeTimeTrajectory']]],
-  ['frozenargument_5ft',['frozenArgument_t',['../a00010.html#a7065a4d215b44041f603d7853b96a485',1,'roboptim::Freeze']]],
-  ['frozenarguments_5ft',['frozenArguments_t',['../a00010.html#a5ff87f4d182bfd6c788ad2a835d57e4e',1,'roboptim::Freeze']]]
+  ['fixedtimetrajectory_5ft',['fixedTimeTrajectory_t',['../a00009.html#a44bf482580453e9909a9ba0bdce64e1a',1,'roboptim::trajectory::FreeTimeTrajectory']]],
+  ['frozenargument_5ft',['frozenArgument_t',['../a00010.html#a7e1c098bf62a205c54d658a3397f953d',1,'roboptim::trajectory::Freeze']]],
+  ['frozenarguments_5ft',['frozenArguments_t',['../a00010.html#a2e895fc24a5b3caffbecc2d70ba188b7',1,'roboptim::trajectory::Freeze']]]
 ];

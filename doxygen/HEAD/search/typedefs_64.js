@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['discreteinterval_5ft',['discreteInterval_t',['../a00027.html#aa92ae3c9f70bfb6c628145028a7733ec',1,'roboptim::TrajectorySumCost']]],
-  ['discretestabletimepointinterval_5ft',['discreteStableTimePointInterval_t',['../a00027.html#a637edcf053c62eb2b02747217180bb5f',1,'roboptim::TrajectorySumCost']]]
+  ['discreteinterval_5ft',['discreteInterval_t',['../a00027.html#a2add20b4f6744061cfd89f50798b2a18',1,'roboptim::trajectory::TrajectorySumCost']]],
+  ['discretestabletimepointinterval_5ft',['discreteStableTimePointInterval_t',['../a00027.html#a0bd8d46ccee6041577042c9bb9eef274',1,'roboptim::trajectory::TrajectorySumCost']]]
 ];

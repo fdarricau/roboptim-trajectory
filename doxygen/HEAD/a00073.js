@@ -1,5 +1,5 @@
 var a00073 =
 [
-    [ "plot_xy", "a00082.html#a8470b3cde9bc3f5c8bda1de059a469f4", null ],
-    [ "plot_xytheta", "a00082.html#a10e4af94da20e9c1e65d68c85a15f6d5", null ]
+    [ "plot_xy", "a00083.html#a5b01bc5d17e580b1e76aad90f5c32ad3", null ],
+    [ "plot_xytheta", "a00083.html#a8a28e77bda478112ce618f14d81718e7", null ]
 ];

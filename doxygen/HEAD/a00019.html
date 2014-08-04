@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::Polynomial&lt; N &gt; Class Template Reference</title>
+<title>roboptim::trajectory::Polynomial&lt; N &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -65,131 +65,136 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Polynomial&lt; N &gt; Class Template Reference</div>  </div>
+<div class="title">roboptim::trajectory::Polynomial&lt; N &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::Polynomial" -->
+<!-- doxytag: class="roboptim::trajectory::Polynomial" -->
 <p><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> of degree at most N.  
  <a href="a00019.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/trajectory/polynomial.hh&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for roboptim::Polynomial&lt; N &gt;:</div>
+Inheritance diagram for roboptim::trajectory::Polynomial&lt; N &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00019.png" usemap="#roboptim::Polynomial&lt; N &gt;_map" alt=""/>
-  <map id="roboptim::Polynomial&lt; N &gt;_map" name="roboptim::Polynomial&lt; N &gt;_map">
-<area href="a00014.html" title="Monomial ." alt="roboptim::Monomial&lt; N &gt;" shape="rect" coords="0,56,160,80"/>
+  <img src="a00019.png" usemap="#roboptim::trajectory::Polynomial&lt; N &gt;_map" alt=""/>
+  <map id="roboptim::trajectory::Polynomial&lt; N &gt;_map" name="roboptim::trajectory::Polynomial&lt; N &gt;_map">
+<area href="a00014.html" title="Monomial ." alt="roboptim::trajectory::Monomial&lt; N &gt;" shape="rect" coords="0,56,220,80"/>
 </map>
  </div></div>
 
-<p><a href="a00102.html">List of all members.</a></p>
+<p><a href="a00105.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef Function::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef Function::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef Function::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a36cd796b173c0c9ba59525e1f52a83ae">vector_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef Function::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ac6449bfd4a55938da4d5db6e278ff78d">interval_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21">roots_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the vector of roots.  <a href="#a4a73af23ffaa0bbcc5721cfd2fef6a21"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Function::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#adc5c9e0b1b1c112447d4307a907810d7">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Function::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Function::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ab1843ffcdbcb1c1805fac63791c71277">vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Function::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a8ed2ac69a776400dc85f49a3602358e0">interval_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a5b9e95849100440b167fac9049e7ab04">roots_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the vector of roots.  <a href="#a5b9e95849100440b167fac9049e7ab04"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix<br class="typebreak"/>
-&lt; <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>, N+1, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-size coefficient vector (N+1 if N is the polynomial degree).  <a href="#abb886543112518b4cba8f3a17c3c94c1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>, <br class="typebreak"/>
-<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aadfffecc1cc76e8983188256e3b69d56">min_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a minimum query: (t_min, P(t_min))  <a href="#aadfffecc1cc76e8983188256e3b69d56"></a><br/></td></tr>
+&lt; <a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>, N+1, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a0187df71a28720db427b85ec6b97ea48">coefs_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-size coefficient vector (N+1 if N is the polynomial degree).  <a href="#a0187df71a28720db427b85ec6b97ea48"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>, <br class="typebreak"/>
+<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a82ddc6b221b823b98c7798afacf338fe">min_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a minimum query: (t_min, P(t_min))  <a href="#a82ddc6b221b823b98c7798afacf338fe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef ::roboptim::Polynomial<br class="typebreak"/>
+&lt; Function::traits_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aec9463e4e8d7191b870cc385b05982eb">polynomialFunction_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function.  <a href="#aec9463e4e8d7191b870cc385b05982eb"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a657ec7d47dc937be37e0081c1bb319fb">Polynomial</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor: return a null polynomial.  <a href="#a657ec7d47dc937be37e0081c1bb319fb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a939ecdd9e19708828f506120672f5770">Polynomial</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html#aba1dc041201a06d7e967fcbb261541ba">t0</a>, const <a class="el" href="a00019.html#a36cd796b173c0c9ba59525e1f52a83ae">vector_t</a> &amp;<a class="el" href="a00019.html#a3026ed88761f0d452fdfe04a9641ba7e">coefs</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct of a polynomial from its center and its coefficients.  <a href="#a939ecdd9e19708828f506120672f5770"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a824f746ffedcb1155a720ab54cda82c5">Polynomial</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html#aba1dc041201a06d7e967fcbb261541ba">t0</a>,...)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Variadic constructor.  <a href="#a824f746ffedcb1155a720ab54cda82c5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a65303805be2d2beeee986b6a8223c3a9">Polynomial</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor: return a null polynomial.  <a href="#a65303805be2d2beeee986b6a8223c3a9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a30d2b0f0213f8108287ebf7835986561">Polynomial</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html#ab7438705bb8f24644d7af2f7e5618645">t0</a>, const <a class="el" href="a00019.html#ab1843ffcdbcb1c1805fac63791c71277">vector_t</a> &amp;<a class="el" href="a00019.html#a54ee543e0be2c271b39d1fdeb16713a8">coefs</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct of a polynomial from its center and its coefficients.  <a href="#a30d2b0f0213f8108287ebf7835986561"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a5ea3718ae7fd8dd42e05d67ac3aac5b1">Polynomial</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html#ab7438705bb8f24644d7af2f7e5618645">t0</a>,...)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Variadic constructor.  <a href="#a5ea3718ae7fd8dd42e05d67ac3aac5b1"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int M&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#a233850918a67a2556cb481b260272a02">Polynomial</a> (const <a class="el" href="a00019.html">Polynomial</a>&lt; M &gt; &amp;p)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor of polynomials of different orders.  <a href="#a233850918a67a2556cb481b260272a02"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a6ff0d9f7311ce508bc9e67b1d235b417">translate</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t1) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new polynomial translated from (t-t₀) to (t-t₁).  <a href="#a6ff0d9f7311ce508bc9e67b1d235b417"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a5127ae88e3f1d94fe92673e6f4c45d09">translateInPlace</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t1)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate the polynomial (in place) from (t-t₀) to (t-t₁).  <a href="#a5127ae88e3f1d94fe92673e6f4c45d09"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#a7ea5b6aaf4f8fb128f7af10655200d17">Polynomial</a> (const <a class="el" href="a00019.html">Polynomial</a>&lt; M &gt; &amp;p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor of polynomials of different orders.  <a href="#a7ea5b6aaf4f8fb128f7af10655200d17"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a9b488d87a85c5fa46725050183ea3f7a">translate</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> t1) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new polynomial translated from (t-t₀) to (t-t₁).  <a href="#a9b488d87a85c5fa46725050183ea3f7a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a5c47704f613f1a5588e365b1c3749b91">translateInPlace</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> t1)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate the polynomial (in place) from (t-t₀) to (t-t₁).  <a href="#a5c47704f613f1a5588e365b1c3749b91"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int K&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#ac18ddbf9c86809ad4cfe62b1f6376066">derivative</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the derivative polynomial of a given order.  <a href="#ac18ddbf9c86809ad4cfe62b1f6376066"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a7ef9624cd950cb41cf8d7d3b2a0a7b98">derivative</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t, <a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> <a class="el" href="a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a>=1) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the derivative of a given order.  <a href="#a7ef9624cd950cb41cf8d7d3b2a0a7b98"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#a813c270b0fdea9e6fbf60e65ccd4719f">derivative</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the derivative polynomial of a given order.  <a href="#a813c270b0fdea9e6fbf60e65ccd4719f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a159def02b3206752b79759f37c71fc77">derivative</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> t, <a class="el" href="a00019.html#adc5c9e0b1b1c112447d4307a907810d7">size_type</a> <a class="el" href="a00019.html#ad70b739002a3a129317c5926174276b4">order</a>=1) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the derivative of a given order.  <a href="#a159def02b3206752b79759f37c71fc77"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int M&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N+M &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#a0c94bad8f9317a217e18cf2896b44bee">operator*</a> (const <a class="el" href="a00019.html">Polynomial</a>&lt; M &gt; &amp;poly) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply polynomials of different orders.  <a href="#a0c94bad8f9317a217e18cf2896b44bee"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a9dd83503d928586ed8b550b2bb5feb95">operator+</a> (const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;poly) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition of polynomials.  <a href="#a9dd83503d928586ed8b550b2bb5feb95"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a38701598fe15b6ae0b38b77851996fab">operator-</a> (const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;poly) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction of polynomials.  <a href="#a38701598fe15b6ae0b38b77851996fab"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a302d13b8e1cdc9e8336d9f277eb026b1">operator*</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> lambda) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar multiplication of a polynomial.  <a href="#a302d13b8e1cdc9e8336d9f277eb026b1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a476d94c1e37cd0e8f3c53c56251cbb01">operator()</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the polynomial with Horner's method.  <a href="#a476d94c1e37cd0e8f3c53c56251cbb01"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a3026ed88761f0d452fdfe04a9641ba7e">coefs</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Const getter to coefs.  <a href="#a3026ed88761f0d452fdfe04a9641ba7e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae9718d6ea68938870cb26b14464480f6">coefs</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter to coefs.  <a href="#ae9718d6ea68938870cb26b14464480f6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aba1dc041201a06d7e967fcbb261541ba">t0</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Const getter to t0.  <a href="#aba1dc041201a06d7e967fcbb261541ba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aad8ba7668a23226c587220430e64226e">t0</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to t0.  <a href="#aad8ba7668a23226c587220430e64226e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aa977c36e195270a56130ba4d833d542f">operator[]</a> (int i) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the i-th polynomial coefficient.  <a href="#aa977c36e195270a56130ba4d833d542f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21">roots_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#acc66532e3206f72e5b08451467924595">realRoots</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#acc66532e3206f72e5b08451467924595"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#aadfffecc1cc76e8983188256e3b69d56">min_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#abe4df60f72536099475e2b0dd1c5fde5">min</a> (const <a class="el" href="a00019.html#ac6449bfd4a55938da4d5db6e278ff78d">interval_t</a> &amp;interval) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the minimum of the polynomial on an interval.  <a href="#abe4df60f72536099475e2b0dd1c5fde5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a02bd7d6dc41ec46617d3cf227700ec05">isConstant</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> epsilon=Function::epsilon()) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the polynomial is constant.  <a href="#a02bd7d6dc41ec46617d3cf227700ec05"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N+M &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#ae7b791b2f2716f3496227a2a965197c6">operator*</a> (const <a class="el" href="a00019.html">Polynomial</a>&lt; M &gt; &amp;poly) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply polynomials of different orders.  <a href="#ae7b791b2f2716f3496227a2a965197c6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a58309a00ed9509b13119af4a9781af4d">operator+</a> (const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;poly) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition of polynomials.  <a href="#a58309a00ed9509b13119af4a9781af4d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a3b00dc3f78daf3c4d559935bdf28d195">operator-</a> (const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;poly) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction of polynomials.  <a href="#a3b00dc3f78daf3c4d559935bdf28d195"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a58ca2d70a7abc7833d528d89cc37c79b">operator*</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> lambda) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar multiplication of a polynomial.  <a href="#a58ca2d70a7abc7833d528d89cc37c79b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a6194efdc5715b731e6a8b4438763dc4a">operator()</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> t) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the polynomial with Horner's method.  <a href="#a6194efdc5715b731e6a8b4438763dc4a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00019.html#a0187df71a28720db427b85ec6b97ea48">coefs_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a54ee543e0be2c271b39d1fdeb16713a8">coefs</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Const getter to coefs.  <a href="#a54ee543e0be2c271b39d1fdeb16713a8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a0187df71a28720db427b85ec6b97ea48">coefs_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae0f52f29f57e42bf271e93b63a3d7d86">coefs</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter to coefs.  <a href="#ae0f52f29f57e42bf271e93b63a3d7d86"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ab7438705bb8f24644d7af2f7e5618645">t0</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Const getter to t0.  <a href="#ab7438705bb8f24644d7af2f7e5618645"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a8be7bcf3651455d56e71409a66fb06b2">t0</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to t0.  <a href="#a8be7bcf3651455d56e71409a66fb06b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a487a9d2aa95453b5f682bb9374aae778">operator[]</a> (int i) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the i-th polynomial coefficient.  <a href="#a487a9d2aa95453b5f682bb9374aae778"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a5b9e95849100440b167fac9049e7ab04">roots_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aa72dadfc8ab004ca792a42414cf06b19">realRoots</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#aa72dadfc8ab004ca792a42414cf06b19"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a82ddc6b221b823b98c7798afacf338fe">min_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a50c6baef00dc1bf86d9acb13b413b599">min</a> (const <a class="el" href="a00019.html#a8ed2ac69a776400dc85f49a3602358e0">interval_t</a> &amp;interval) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the minimum of the polynomial on an interval.  <a href="#a50c6baef00dc1bf86d9acb13b413b599"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae09a63ad73b445aeb706aa445d25aeed">isConstant</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> epsilon=Function::epsilon()) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the polynomial is constant.  <a href="#ae09a63ad73b445aeb706aa445d25aeed"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#aec9463e4e8d7191b870cc385b05982eb">polynomialFunction_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a377e0b0e87334988886bf92238078689">asFunction</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the equivalent <a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function.  <a href="#a377e0b0e87334988886bf92238078689"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the order of such a polynomial.  <a href="#ad0c5e2fa6f7a4a0d84a6b41187adb8dd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ad70b739002a3a129317c5926174276b4">order</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the order of such a polynomial.  <a href="#ad70b739002a3a129317c5926174276b4"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141">special_polynomials</a> { <br/>
-&#160;&#160;<a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141a161002947b7db7fb27c0688420792488">all_zero_coefficients</a> =  0, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5">special_polynomials</a> { <br/>
+&#160;&#160;<a class="el" href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5a79a4a1cc3ef6d72f3b7b3bfc97bf506f">all_zero_coefficients</a> =  0, 
 <br/>
-&#160;&#160;<a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141ad854f2f1159647c2c78a2d39d14562c1">monomial_coefficients</a> =  1
+&#160;&#160;<a class="el" href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5a935e46b0cb7d4b29c8815936f19e27f0">monomial_coefficients</a> =  1
 <br/>
  }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for special polynomials.  <a href="a00019.html#ab8517f56366fa53134976efa1069a141">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for special polynomials.  <a href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a727023f00fed5a59e443676eb8785e0b">impl_derivative</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t, <a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> <a class="el" href="a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a>, <a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a> start_coef=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aff4bfa42b960b4f558e706efe399c091">impl_derivative</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> t, <a class="el" href="a00019.html#adc5c9e0b1b1c112447d4307a907810d7">size_type</a> <a class="el" href="a00019.html#ad70b739002a3a129317c5926174276b4">order</a>, <a class="el" href="a00019.html#adc5c9e0b1b1c112447d4307a907810d7">size_type</a> start_coef=0) const </td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int K&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#ac7bda9aaac0a8e4c32bcc25fa8295a31">impl_derivative</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the compile-time derivative.  <a href="#ac7bda9aaac0a8e4c32bcc25fa8295a31"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ade7edc4c36d96fb7eb8288c15b577c52">impl_translate</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> t1) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a537a1e4aa6ca54fdce2214dea7de074f">Polynomial</a> (<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html#aba1dc041201a06d7e967fcbb261541ba">t0</a>, <a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141">special_polynomials</a> key)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Special constructor for Monomial&lt;N&gt; and some operators.  <a href="#a537a1e4aa6ca54fdce2214dea7de074f"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00019.html#a684350d78a59645681356316c3f4d7cd">impl_derivative</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the compile-time derivative.  <a href="#a684350d78a59645681356316c3f4d7cd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a0187df71a28720db427b85ec6b97ea48">coefs_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a2e291ec8c115f725755f7da225196934">impl_translate</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> t1) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aab799133b2498063a3c12a340e8a749f">Polynomial</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html#ab7438705bb8f24644d7af2f7e5618645">t0</a>, <a class="el" href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5">special_polynomials</a> key)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Special constructor for Monomial&lt;N&gt; and some operators.  <a href="#aab799133b2498063a3c12a340e8a749f"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a0f0dc975c4aafe4b85269dad5f348f40">order_</a> = N</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">order of the polynomial.  <a href="#a0f0dc975c4aafe4b85269dad5f348f40"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a5de7261e449ec6888b7163a5203514bd">order_</a> = N</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">order of the polynomial.  <a href="#a5de7261e449ec6888b7163a5203514bd"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;int N&gt;<br/>
-class roboptim::Polynomial&lt; N &gt;</h3>
+class roboptim::trajectory::Polynomial&lt; N &gt;</h3>
 
 <p><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> of degree at most N. </p>
 <p class="formulaDsp">
 <img class="formulaDsp" alt="\[ P (t) = \sum_{i=0}^{N} a_i (t-t_0)^i \]" src="form_10.png"/>
 </p>
  </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="abb886543112518b4cba8f3a17c3c94c1"></a><!-- doxytag: member="roboptim::Polynomial::coefs_t" ref="abb886543112518b4cba8f3a17c3c94c1" args="" -->
+<a class="anchor" id="a0187df71a28720db427b85ec6b97ea48"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::coefs_t" ref="a0187df71a28720db427b85ec6b97ea48" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Eigen::Matrix&lt;<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>, N+1, 1&gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a></td>
+          <td class="memname">typedef Eigen::Matrix&lt;<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>, N+1, 1&gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a0187df71a28720db427b85ec6b97ea48">coefs_t</a></td>
         </tr>
       </table>
 </div>
@@ -199,14 +204,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac6449bfd4a55938da4d5db6e278ff78d"></a><!-- doxytag: member="roboptim::Polynomial::interval_t" ref="ac6449bfd4a55938da4d5db6e278ff78d" args="" -->
+<a class="anchor" id="a8ed2ac69a776400dc85f49a3602358e0"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::interval_t" ref="a8ed2ac69a776400dc85f49a3602358e0" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Function::interval_t <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ac6449bfd4a55938da4d5db6e278ff78d">interval_t</a></td>
+          <td class="memname">typedef Function::interval_t <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a8ed2ac69a776400dc85f49a3602358e0">interval_t</a></td>
         </tr>
       </table>
 </div>
@@ -214,14 +219,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aadfffecc1cc76e8983188256e3b69d56"></a><!-- doxytag: member="roboptim::Polynomial::min_t" ref="aadfffecc1cc76e8983188256e3b69d56" args="" -->
+<a class="anchor" id="a82ddc6b221b823b98c7798afacf338fe"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::min_t" ref="a82ddc6b221b823b98c7798afacf338fe" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>, <a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aadfffecc1cc76e8983188256e3b69d56">min_t</a></td>
+          <td class="memname">typedef std::pair&lt;<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>, <a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a82ddc6b221b823b98c7798afacf338fe">min_t</a></td>
         </tr>
       </table>
 </div>
@@ -231,14 +236,31 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4a73af23ffaa0bbcc5721cfd2fef6a21"></a><!-- doxytag: member="roboptim::Polynomial::roots_t" ref="a4a73af23ffaa0bbcc5721cfd2fef6a21" args="" -->
+<a class="anchor" id="aec9463e4e8d7191b870cc385b05982eb"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::polynomialFunction_t" ref="aec9463e4e8d7191b870cc385b05982eb" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21">roots_t</a></td>
+          <td class="memname">typedef ::roboptim::Polynomial&lt;Function::traits_t&gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aec9463e4e8d7191b870cc385b05982eb">polynomialFunction_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5b9e95849100440b167fac9049e7ab04"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::roots_t" ref="a5b9e95849100440b167fac9049e7ab04" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a5b9e95849100440b167fac9049e7ab04">roots_t</a></td>
         </tr>
       </table>
 </div>
@@ -248,14 +270,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a39933631d02811c977ab6f96e4b7b6cd"></a><!-- doxytag: member="roboptim::Polynomial::size_type" ref="a39933631d02811c977ab6f96e4b7b6cd" args="" -->
+<a class="anchor" id="adc5c9e0b1b1c112447d4307a907810d7"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::size_type" ref="adc5c9e0b1b1c112447d4307a907810d7" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Function::size_type <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a></td>
+          <td class="memname">typedef Function::size_type <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#adc5c9e0b1b1c112447d4307a907810d7">size_type</a></td>
         </tr>
       </table>
 </div>
@@ -263,31 +285,31 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7154408537194a36e0ee0015cb868787"></a><!-- doxytag: member="roboptim::Polynomial::value_type" ref="a7154408537194a36e0ee0015cb868787" args="" -->
+<a class="anchor" id="af4a479ed6532ddfe59d7d7427b416dc4"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::value_type" ref="af4a479ed6532ddfe59d7d7427b416dc4" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Function::value_type <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a></td>
+          <td class="memname">typedef Function::value_type <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="a00014.html#a2ee832094452772d0d54ea94c35856ed">roboptim::Monomial&lt; N &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="a00014.html#aa4ed162e608e4ea6b351efff1ed99b20">roboptim::trajectory::Monomial&lt; N &gt;</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a36cd796b173c0c9ba59525e1f52a83ae"></a><!-- doxytag: member="roboptim::Polynomial::vector_t" ref="a36cd796b173c0c9ba59525e1f52a83ae" args="" -->
+<a class="anchor" id="ab1843ffcdbcb1c1805fac63791c71277"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::vector_t" ref="ab1843ffcdbcb1c1805fac63791c71277" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Function::vector_t <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a36cd796b173c0c9ba59525e1f52a83ae">vector_t</a></td>
+          <td class="memname">typedef Function::vector_t <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ab1843ffcdbcb1c1805fac63791c71277">vector_t</a></td>
         </tr>
       </table>
 </div>
@@ -296,14 +318,14 @@ template&lt;int N&gt; </div>
 </div>
 </div>
 <hr/><h2>Member Enumeration Documentation</h2>
-<a class="anchor" id="ab8517f56366fa53134976efa1069a141"></a><!-- doxytag: member="roboptim::Polynomial::special_polynomials" ref="ab8517f56366fa53134976efa1069a141" args="" -->
+<a class="anchor" id="a0184bffd60b7f3cbddaa8b78596577a5"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::special_polynomials" ref="a0184bffd60b7f3cbddaa8b78596577a5" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141">roboptim::Polynomial::special_polynomials</a><code> [protected]</code></td>
+          <td class="memname">enum <a class="el" href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5">roboptim::trajectory::Polynomial::special_polynomials</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -311,10 +333,10 @@ template&lt;int N&gt; </div>
 
 <p>Enum for special polynomials. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="ab8517f56366fa53134976efa1069a141a161002947b7db7fb27c0688420792488"></a><!-- doxytag: member="all_zero_coefficients" ref="ab8517f56366fa53134976efa1069a141a161002947b7db7fb27c0688420792488" args="" -->all_zero_coefficients</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a0184bffd60b7f3cbddaa8b78596577a5a79a4a1cc3ef6d72f3b7b3bfc97bf506f"></a><!-- doxytag: member="all_zero_coefficients" ref="a0184bffd60b7f3cbddaa8b78596577a5a79a4a1cc3ef6d72f3b7b3bfc97bf506f" args="" -->all_zero_coefficients</em>&nbsp;</td><td>
 <p>Null polynomial: 0. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ab8517f56366fa53134976efa1069a141ad854f2f1159647c2c78a2d39d14562c1"></a><!-- doxytag: member="monomial_coefficients" ref="ab8517f56366fa53134976efa1069a141ad854f2f1159647c2c78a2d39d14562c1" args="" -->monomial_coefficients</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a0184bffd60b7f3cbddaa8b78596577a5a935e46b0cb7d4b29c8815936f19e27f0"></a><!-- doxytag: member="monomial_coefficients" ref="a0184bffd60b7f3cbddaa8b78596577a5a935e46b0cb7d4b29c8815936f19e27f0" args="" -->monomial_coefficients</em>&nbsp;</td><td>
 <p><a class="el" href="a00014.html" title="Monomial .">Monomial</a> polynomial: (t-t₀) </p>
 </td></tr>
 </table>
@@ -324,14 +346,14 @@ template&lt;int N&gt; </div>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a657ec7d47dc937be37e0081c1bb319fb"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a657ec7d47dc937be37e0081c1bb319fb" args="()" -->
+<a class="anchor" id="a65303805be2d2beeee986b6a8223c3a9"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::Polynomial" ref="a65303805be2d2beeee986b6a8223c3a9" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -344,22 +366,22 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a939ecdd9e19708828f506120672f5770"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a939ecdd9e19708828f506120672f5770" args="(value_type t0, const vector_t &amp;coefs)" -->
+<a class="anchor" id="a30d2b0f0213f8108287ebf7835986561"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::Polynomial" ref="a30d2b0f0213f8108287ebf7835986561" args="(value_type t0, const vector_t &amp;coefs)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00019.html#a36cd796b173c0c9ba59525e1f52a83ae">vector_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00019.html#ab1843ffcdbcb1c1805fac63791c71277">vector_t</a> &amp;&#160;</td>
           <td class="paramname"><em>coefs</em>&#160;</td>
         </tr>
         <tr>
@@ -380,20 +402,20 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 
-<p>References <a class="el" href="a00019.html#a3026ed88761f0d452fdfe04a9641ba7e">roboptim::Polynomial&lt; N &gt;::coefs()</a>.</p>
+<p>References <a class="el" href="a00019.html#a54ee543e0be2c271b39d1fdeb16713a8">roboptim::trajectory::Polynomial&lt; N &gt;::coefs()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a824f746ffedcb1155a720ab54cda82c5"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a824f746ffedcb1155a720ab54cda82c5" args="(value_type t0,...)" -->
+<a class="anchor" id="a5ea3718ae7fd8dd42e05d67ac3aac5b1"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::Polynomial" ref="a5ea3718ae7fd8dd42e05d67ac3aac5b1" args="(value_type t0,...)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t0</em>, </td>
         </tr>
         <tr>
@@ -423,7 +445,7 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a233850918a67a2556cb481b260272a02"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a233850918a67a2556cb481b260272a02" args="(const Polynomial&lt; M &gt; &amp;p)" -->
+<a class="anchor" id="a7ea5b6aaf4f8fb128f7af10655200d17"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::Polynomial" ref="a7ea5b6aaf4f8fb128f7af10655200d17" args="(const Polynomial&lt; M &gt; &amp;p)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -432,7 +454,7 @@ template&lt;int N&gt; </div>
 template&lt;int M&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00019.html">Polynomial</a>&lt; M &gt; &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -457,26 +479,26 @@ template&lt;int M&gt; </div>
   </dd>
 </dl>
 
-<p>References <a class="el" href="a00019.html#a3026ed88761f0d452fdfe04a9641ba7e">roboptim::Polynomial&lt; N &gt;::coefs()</a>.</p>
+<p>References <a class="el" href="a00019.html#a54ee543e0be2c271b39d1fdeb16713a8">roboptim::trajectory::Polynomial&lt; N &gt;::coefs()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a537a1e4aa6ca54fdce2214dea7de074f"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a537a1e4aa6ca54fdce2214dea7de074f" args="(value_type t0, special_polynomials key)" -->
+<a class="anchor" id="aab799133b2498063a3c12a340e8a749f"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::Polynomial" ref="aab799133b2498063a3c12a340e8a749f" args="(value_type t0, special_polynomials key)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html">Polynomial</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141">special_polynomials</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5">special_polynomials</a>&#160;</td>
           <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
@@ -497,19 +519,41 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 
-<p>References <a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141a161002947b7db7fb27c0688420792488">roboptim::Polynomial&lt; N &gt;::all_zero_coefficients</a>, and <a class="el" href="a00019.html#ab8517f56366fa53134976efa1069a141ad854f2f1159647c2c78a2d39d14562c1">roboptim::Polynomial&lt; N &gt;::monomial_coefficients</a>.</p>
+<p>References <a class="el" href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5a79a4a1cc3ef6d72f3b7b3bfc97bf506f">roboptim::trajectory::Polynomial&lt; N &gt;::all_zero_coefficients</a>, and <a class="el" href="a00019.html#a0184bffd60b7f3cbddaa8b78596577a5a935e46b0cb7d4b29c8815936f19e27f0">roboptim::trajectory::Polynomial&lt; N &gt;::monomial_coefficients</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a3026ed88761f0d452fdfe04a9641ba7e"></a><!-- doxytag: member="roboptim::Polynomial::coefs" ref="a3026ed88761f0d452fdfe04a9641ba7e" args="() const " -->
+<a class="anchor" id="a377e0b0e87334988886bf92238078689"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::asFunction" ref="a377e0b0e87334988886bf92238078689" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a> &amp; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a3026ed88761f0d452fdfe04a9641ba7e">coefs</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aec9463e4e8d7191b870cc385b05982eb">polynomialFunction_t</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a377e0b0e87334988886bf92238078689">asFunction</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the equivalent <a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function. </p>
+<p>This can be used for all the methods that expect a RobOptim function (e.g. plotting). </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function with the appropriate coefficients set. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54ee543e0be2c271b39d1fdeb16713a8"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::coefs" ref="a54ee543e0be2c271b39d1fdeb16713a8" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a0187df71a28720db427b85ec6b97ea48">coefs_t</a> &amp; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a54ee543e0be2c271b39d1fdeb16713a8">coefs</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -521,18 +565,18 @@ template&lt;int N&gt; </div>
 <p>Const getter to coefs. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>const reference to polynomial coefficients. </dd></dl>
 
-<p>Referenced by <a class="el" href="a00004.html#a06098611f482bc64a6b5d0c0f24ed1f8">roboptim::BSpline&lt; N &gt;::cox_de_boor()</a>, <a class="el" href="a00019.html#a0c94bad8f9317a217e18cf2896b44bee">roboptim::Polynomial&lt; N &gt;::operator*()</a>, and <a class="el" href="a00019.html#a939ecdd9e19708828f506120672f5770">roboptim::Polynomial&lt; N &gt;::Polynomial()</a>.</p>
+<p>Referenced by <a class="el" href="a00004.html#ae1e4871b3e8e9e302c31c81b489d7f4c">roboptim::trajectory::BSpline&lt; N &gt;::cox_de_boor()</a>, <a class="el" href="a00019.html#ae7b791b2f2716f3496227a2a965197c6">roboptim::trajectory::Polynomial&lt; N &gt;::operator*()</a>, and <a class="el" href="a00019.html#a30d2b0f0213f8108287ebf7835986561">roboptim::trajectory::Polynomial&lt; N &gt;::Polynomial()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae9718d6ea68938870cb26b14464480f6"></a><!-- doxytag: member="roboptim::Polynomial::coefs" ref="ae9718d6ea68938870cb26b14464480f6" args="()" -->
+<a class="anchor" id="ae0f52f29f57e42bf271e93b63a3d7d86"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::coefs" ref="ae0f52f29f57e42bf271e93b63a3d7d86" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a> &amp; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a3026ed88761f0d452fdfe04a9641ba7e">coefs</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a0187df71a28720db427b85ec6b97ea48">coefs_t</a> &amp; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a54ee543e0be2c271b39d1fdeb16713a8">coefs</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -546,7 +590,7 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac18ddbf9c86809ad4cfe62b1f6376066"></a><!-- doxytag: member="roboptim::Polynomial::derivative" ref="ac18ddbf9c86809ad4cfe62b1f6376066" args="() const " -->
+<a class="anchor" id="a813c270b0fdea9e6fbf60e65ccd4719f"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::derivative" ref="a813c270b0fdea9e6fbf60e65ccd4719f" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -555,7 +599,7 @@ template&lt;int N&gt; </div>
 template&lt;int K&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ac18ddbf9c86809ad4cfe62b1f6376066">derivative</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a813c270b0fdea9e6fbf60e65ccd4719f">derivative</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -573,26 +617,26 @@ template&lt;int K&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>K-th derivative of the polynomial. </dd></dl>
 
-<p>Referenced by <a class="el" href="a00004.html#a0d3879c2c90db8d035d4315ebe8e7894">roboptim::BSpline&lt; N &gt;::basisFunctions()</a>, <a class="el" href="a00004.html#a425a3df6ae1c10ed23300bb06f08c100">roboptim::BSpline&lt; N &gt;::impl_derivative()</a>, <a class="el" href="a00007.html#a27ce0b586da0ef99849d2b0783ac9142">roboptim::CubicBSpline::impl_derivative()</a>, <a class="el" href="a00007.html#a5bb38d6cce0fcd79e5632a4d402d5385">roboptim::CubicBSpline::variationDerivWrtParam()</a>, <a class="el" href="a00006.html#a23e0111f71892c2ca1e3bceb64853535">roboptim::ConstrainedBSpline&lt; N &gt;::variationDerivWrtParam()</a>, and <a class="el" href="a00004.html#a95656c966a2473db4e79edd530bb3a69">roboptim::BSpline&lt; N &gt;::variationDerivWrtParam()</a>.</p>
+<p>Referenced by <a class="el" href="a00004.html#aa4f80286c94295ebdc47f459a6cde91a">roboptim::trajectory::BSpline&lt; N &gt;::basisFunctions()</a>, <a class="el" href="a00004.html#a95bccf8bc7bdae3801fa222b2f37057a">roboptim::trajectory::BSpline&lt; N &gt;::impl_derivative()</a>, <a class="el" href="a00007.html#a63b252d947004d7272edb93e83cb7829">roboptim::trajectory::CubicBSpline::impl_derivative()</a>, <a class="el" href="a00007.html#aeb04faacc1e8a8e658995be9132b33fa">roboptim::trajectory::CubicBSpline::variationDerivWrtParam()</a>, <a class="el" href="a00006.html#ab5c8c94810fe95a369f50863ba1bc0f7">roboptim::trajectory::ConstrainedBSpline&lt; N &gt;::variationDerivWrtParam()</a>, and <a class="el" href="a00004.html#a0749f2e038cd92df1e5788a85048e100">roboptim::trajectory::BSpline&lt; N &gt;::variationDerivWrtParam()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7ef9624cd950cb41cf8d7d3b2a0a7b98"></a><!-- doxytag: member="roboptim::Polynomial::derivative" ref="a7ef9624cd950cb41cf8d7d3b2a0a7b98" args="(value_type t, size_type order=1) const " -->
+<a class="anchor" id="a159def02b3206752b79759f37c71fc77"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::derivative" ref="a159def02b3206752b79759f37c71fc77" args="(value_type t, size_type order=1) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ac18ddbf9c86809ad4cfe62b1f6376066">derivative</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a813c270b0fdea9e6fbf60e65ccd4719f">derivative</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#adc5c9e0b1b1c112447d4307a907810d7">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -616,28 +660,28 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a727023f00fed5a59e443676eb8785e0b"></a><!-- doxytag: member="roboptim::Polynomial::impl_derivative" ref="a727023f00fed5a59e443676eb8785e0b" args="(value_type t, size_type order, size_type start_coef=0) const " -->
+<a class="anchor" id="aff4bfa42b960b4f558e706efe399c091"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::impl_derivative" ref="aff4bfa42b960b4f558e706efe399c091" args="(value_type t, size_type order, size_type start_coef=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a727023f00fed5a59e443676eb8785e0b">impl_derivative</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aff4bfa42b960b4f558e706efe399c091">impl_derivative</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#adc5c9e0b1b1c112447d4307a907810d7">size_type</a>&#160;</td>
           <td class="paramname"><em>order</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00019.html#a39933631d02811c977ab6f96e4b7b6cd">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#adc5c9e0b1b1c112447d4307a907810d7">size_type</a>&#160;</td>
           <td class="paramname"><em>start_coef</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -651,7 +695,7 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac7bda9aaac0a8e4c32bcc25fa8295a31"></a><!-- doxytag: member="roboptim::Polynomial::impl_derivative" ref="ac7bda9aaac0a8e4c32bcc25fa8295a31" args="() const " -->
+<a class="anchor" id="a684350d78a59645681356316c3f4d7cd"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::impl_derivative" ref="a684350d78a59645681356316c3f4d7cd" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -660,7 +704,7 @@ template&lt;int N&gt; </div>
 template&lt;int K&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a727023f00fed5a59e443676eb8785e0b">impl_derivative</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N-K &gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aff4bfa42b960b4f558e706efe399c091">impl_derivative</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [protected]</code></td>
@@ -680,16 +724,16 @@ template&lt;int K&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ade7edc4c36d96fb7eb8288c15b577c52"></a><!-- doxytag: member="roboptim::Polynomial::impl_translate" ref="ade7edc4c36d96fb7eb8288c15b577c52" args="(value_type t1) const " -->
+<a class="anchor" id="a2e291ec8c115f725755f7da225196934"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::impl_translate" ref="a2e291ec8c115f725755f7da225196934" args="(value_type t1) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#abb886543112518b4cba8f3a17c3c94c1">coefs_t</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ade7edc4c36d96fb7eb8288c15b577c52">impl_translate</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a0187df71a28720db427b85ec6b97ea48">coefs_t</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a2e291ec8c115f725755f7da225196934">impl_translate</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t1</em></td><td>)</td>
           <td> const<code> [protected]</code></td>
         </tr>
@@ -699,16 +743,16 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a02bd7d6dc41ec46617d3cf227700ec05"></a><!-- doxytag: member="roboptim::Polynomial::isConstant" ref="a02bd7d6dc41ec46617d3cf227700ec05" args="(value_type epsilon=Function::epsilon()) const " -->
+<a class="anchor" id="ae09a63ad73b445aeb706aa445d25aeed"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::isConstant" ref="ae09a63ad73b445aeb706aa445d25aeed" args="(value_type epsilon=Function::epsilon()) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a02bd7d6dc41ec46617d3cf227700ec05">isConstant</a> </td>
+          <td class="memname">bool <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ae09a63ad73b445aeb706aa445d25aeed">isConstant</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>epsilon</em> = <code>Function::epsilon&#160;()</code></td><td>)</td>
           <td> const</td>
         </tr>
@@ -727,16 +771,16 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abe4df60f72536099475e2b0dd1c5fde5"></a><!-- doxytag: member="roboptim::Polynomial::min" ref="abe4df60f72536099475e2b0dd1c5fde5" args="(const interval_t &amp;interval) const " -->
+<a class="anchor" id="a50c6baef00dc1bf86d9acb13b413b599"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::min" ref="a50c6baef00dc1bf86d9acb13b413b599" args="(const interval_t &amp;interval) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aadfffecc1cc76e8983188256e3b69d56">min_t</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#abe4df60f72536099475e2b0dd1c5fde5">min</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a82ddc6b221b823b98c7798afacf338fe">min_t</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a50c6baef00dc1bf86d9acb13b413b599">min</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00019.html#ac6449bfd4a55938da4d5db6e278ff78d">interval_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00019.html#a8ed2ac69a776400dc85f49a3602358e0">interval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -755,16 +799,16 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a476d94c1e37cd0e8f3c53c56251cbb01"></a><!-- doxytag: member="roboptim::Polynomial::operator()" ref="a476d94c1e37cd0e8f3c53c56251cbb01" args="(value_type t) const " -->
+<a class="anchor" id="a6194efdc5715b731e6a8b4438763dc4a"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::operator()" ref="a6194efdc5715b731e6a8b4438763dc4a" args="(value_type t) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::operator() </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -783,7 +827,7 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0c94bad8f9317a217e18cf2896b44bee"></a><!-- doxytag: member="roboptim::Polynomial::operator*" ref="a0c94bad8f9317a217e18cf2896b44bee" args="(const Polynomial&lt; M &gt; &amp;poly) const " -->
+<a class="anchor" id="ae7b791b2f2716f3496227a2a965197c6"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::operator*" ref="ae7b791b2f2716f3496227a2a965197c6" args="(const Polynomial&lt; M &gt; &amp;poly) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -792,7 +836,7 @@ template&lt;int N&gt; </div>
 template&lt;int M&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N+M &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::operator* </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N+M &gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00019.html">Polynomial</a>&lt; M &gt; &amp;&#160;</td>
           <td class="paramname"><em>poly</em></td><td>)</td>
@@ -817,20 +861,20 @@ template&lt;int M&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>P₀P₁ </dd></dl>
 
-<p>References <a class="el" href="a00019.html#a3026ed88761f0d452fdfe04a9641ba7e">roboptim::Polynomial&lt; N &gt;::coefs()</a>, and <a class="el" href="a00019.html#a6ff0d9f7311ce508bc9e67b1d235b417">roboptim::Polynomial&lt; N &gt;::translate()</a>.</p>
+<p>References <a class="el" href="a00019.html#a54ee543e0be2c271b39d1fdeb16713a8">roboptim::trajectory::Polynomial&lt; N &gt;::coefs()</a>, and <a class="el" href="a00019.html#a9b488d87a85c5fa46725050183ea3f7a">roboptim::trajectory::Polynomial&lt; N &gt;::translate()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a302d13b8e1cdc9e8336d9f277eb026b1"></a><!-- doxytag: member="roboptim::Polynomial::operator*" ref="a302d13b8e1cdc9e8336d9f277eb026b1" args="(value_type lambda) const " -->
+<a class="anchor" id="a58ca2d70a7abc7833d528d89cc37c79b"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::operator*" ref="a58ca2d70a7abc7833d528d89cc37c79b" args="(value_type lambda) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::operator* </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::operator* </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>lambda</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -849,14 +893,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9dd83503d928586ed8b550b2bb5feb95"></a><!-- doxytag: member="roboptim::Polynomial::operator+" ref="a9dd83503d928586ed8b550b2bb5feb95" args="(const Polynomial&lt; N &gt; &amp;poly) const " -->
+<a class="anchor" id="a58309a00ed9509b13119af4a9781af4d"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::operator+" ref="a58309a00ed9509b13119af4a9781af4d" args="(const Polynomial&lt; N &gt; &amp;poly) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::operator+ </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::operator+ </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;&#160;</td>
           <td class="paramname"><em>poly</em></td><td>)</td>
@@ -875,18 +919,18 @@ template&lt;int N&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>P₀ + P₁ </dd></dl>
 
-<p>References <a class="el" href="a00019.html#a6ff0d9f7311ce508bc9e67b1d235b417">roboptim::Polynomial&lt; N &gt;::translate()</a>.</p>
+<p>References <a class="el" href="a00019.html#a9b488d87a85c5fa46725050183ea3f7a">roboptim::trajectory::Polynomial&lt; N &gt;::translate()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a38701598fe15b6ae0b38b77851996fab"></a><!-- doxytag: member="roboptim::Polynomial::operator&#45;" ref="a38701598fe15b6ae0b38b77851996fab" args="(const Polynomial&lt; N &gt; &amp;poly) const " -->
+<a class="anchor" id="a3b00dc3f78daf3c4d559935bdf28d195"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::operator&#45;" ref="a3b00dc3f78daf3c4d559935bdf28d195" args="(const Polynomial&lt; N &gt; &amp;poly) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::operator- </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::operator- </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;&#160;</td>
           <td class="paramname"><em>poly</em></td><td>)</td>
@@ -905,18 +949,18 @@ template&lt;int N&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>P₀ - P₁ </dd></dl>
 
-<p>References <a class="el" href="a00019.html#a6ff0d9f7311ce508bc9e67b1d235b417">roboptim::Polynomial&lt; N &gt;::translate()</a>.</p>
+<p>References <a class="el" href="a00019.html#a9b488d87a85c5fa46725050183ea3f7a">roboptim::trajectory::Polynomial&lt; N &gt;::translate()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa977c36e195270a56130ba4d833d542f"></a><!-- doxytag: member="roboptim::Polynomial::operator[]" ref="aa977c36e195270a56130ba4d833d542f" args="(int i) const " -->
+<a class="anchor" id="a487a9d2aa95453b5f682bb9374aae778"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::operator[]" ref="a487a9d2aa95453b5f682bb9374aae778" args="(int i) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::operator[] </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::operator[] </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -937,14 +981,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad0c5e2fa6f7a4a0d84a6b41187adb8dd"></a><!-- doxytag: member="roboptim::Polynomial::order" ref="ad0c5e2fa6f7a4a0d84a6b41187adb8dd" args="()" -->
+<a class="anchor" id="ad70b739002a3a129317c5926174276b4"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::order" ref="ad70b739002a3a129317c5926174276b4" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">static int <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">order</a> </td>
+          <td class="memname">static int <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ad70b739002a3a129317c5926174276b4">order</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline, static]</code></td>
@@ -956,18 +1000,18 @@ template&lt;int N&gt; </div>
 <p>Return the order of such a polynomial. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>order of such a polynomial. </dd></dl>
 
-<p>References <a class="el" href="a00019.html#a0f0dc975c4aafe4b85269dad5f348f40">roboptim::Polynomial&lt; N &gt;::order_</a>.</p>
+<p>References <a class="el" href="a00019.html#a5de7261e449ec6888b7163a5203514bd">roboptim::trajectory::Polynomial&lt; N &gt;::order_</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acc66532e3206f72e5b08451467924595"></a><!-- doxytag: member="roboptim::Polynomial::realRoots" ref="acc66532e3206f72e5b08451467924595" args="() const " -->
+<a class="anchor" id="aa72dadfc8ab004ca792a42414cf06b19"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::realRoots" ref="aa72dadfc8ab004ca792a42414cf06b19" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21">roots_t</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#acc66532e3206f72e5b08451467924595">realRoots</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a5b9e95849100440b167fac9049e7ab04">roots_t</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aa72dadfc8ab004ca792a42414cf06b19">realRoots</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -988,14 +1032,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aba1dc041201a06d7e967fcbb261541ba"></a><!-- doxytag: member="roboptim::Polynomial::t0" ref="aba1dc041201a06d7e967fcbb261541ba" args="() const " -->
+<a class="anchor" id="ab7438705bb8f24644d7af2f7e5618645"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::t0" ref="ab7438705bb8f24644d7af2f7e5618645" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aba1dc041201a06d7e967fcbb261541ba">t0</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ab7438705bb8f24644d7af2f7e5618645">t0</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1009,14 +1053,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aad8ba7668a23226c587220430e64226e"></a><!-- doxytag: member="roboptim::Polynomial::t0" ref="aad8ba7668a23226c587220430e64226e" args="()" -->
+<a class="anchor" id="a8be7bcf3651455d56e71409a66fb06b2"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::t0" ref="a8be7bcf3651455d56e71409a66fb06b2" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a> &amp; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aba1dc041201a06d7e967fcbb261541ba">t0</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> &amp; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ab7438705bb8f24644d7af2f7e5618645">t0</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1030,16 +1074,16 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6ff0d9f7311ce508bc9e67b1d235b417"></a><!-- doxytag: member="roboptim::Polynomial::translate" ref="a6ff0d9f7311ce508bc9e67b1d235b417" args="(value_type t1) const " -->
+<a class="anchor" id="a9b488d87a85c5fa46725050183ea3f7a"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::translate" ref="a9b488d87a85c5fa46725050183ea3f7a" args="(value_type t1) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a6ff0d9f7311ce508bc9e67b1d235b417">translate</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a9b488d87a85c5fa46725050183ea3f7a">translate</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t1</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1056,20 +1100,20 @@ template&lt;int N&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>polynomial translated to (t-t₁) </dd></dl>
 
-<p>Referenced by <a class="el" href="a00019.html#a0c94bad8f9317a217e18cf2896b44bee">roboptim::Polynomial&lt; N &gt;::operator*()</a>, <a class="el" href="a00019.html#a9dd83503d928586ed8b550b2bb5feb95">roboptim::Polynomial&lt; N &gt;::operator+()</a>, and <a class="el" href="a00019.html#a38701598fe15b6ae0b38b77851996fab">roboptim::Polynomial&lt; N &gt;::operator-()</a>.</p>
+<p>Referenced by <a class="el" href="a00019.html#ae7b791b2f2716f3496227a2a965197c6">roboptim::trajectory::Polynomial&lt; N &gt;::operator*()</a>, <a class="el" href="a00019.html#a58309a00ed9509b13119af4a9781af4d">roboptim::trajectory::Polynomial&lt; N &gt;::operator+()</a>, and <a class="el" href="a00019.html#a3b00dc3f78daf3c4d559935bdf28d195">roboptim::trajectory::Polynomial&lt; N &gt;::operator-()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5127ae88e3f1d94fe92673e6f4c45d09"></a><!-- doxytag: member="roboptim::Polynomial::translateInPlace" ref="a5127ae88e3f1d94fe92673e6f4c45d09" args="(value_type t1)" -->
+<a class="anchor" id="a5c47704f613f1a5588e365b1c3749b91"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::translateInPlace" ref="a5c47704f613f1a5588e365b1c3749b91" args="(value_type t1)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a5127ae88e3f1d94fe92673e6f4c45d09">translateInPlace</a> </td>
+          <td class="memname">void <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a5c47704f613f1a5588e365b1c3749b91">translateInPlace</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00019.html#a7154408537194a36e0ee0015cb868787">value_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
           <td class="paramname"><em>t1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1088,14 +1132,14 @@ template&lt;int N&gt; </div>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a0f0dc975c4aafe4b85269dad5f348f40"></a><!-- doxytag: member="roboptim::Polynomial::order_" ref="a0f0dc975c4aafe4b85269dad5f348f40" args="" -->
+<a class="anchor" id="a5de7261e449ec6888b7163a5203514bd"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::order_" ref="a5de7261e449ec6888b7163a5203514bd" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const int <a class="el" href="a00019.html">roboptim::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a0f0dc975c4aafe4b85269dad5f348f40">order_</a> = N<code> [static, protected]</code></td>
+          <td class="memname">const int <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a5de7261e449ec6888b7163a5203514bd">order_</a> = N<code> [static, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1103,7 +1147,7 @@ template&lt;int N&gt; </div>
 
 <p>order of the polynomial. </p>
 
-<p>Referenced by <a class="el" href="a00019.html#ad0c5e2fa6f7a4a0d84a6b41187adb8dd">roboptim::Polynomial&lt; N &gt;::order()</a>.</p>
+<p>Referenced by <a class="el" href="a00019.html#ad70b739002a3a129317c5926174276b4">roboptim::trajectory::Polynomial&lt; N &gt;::order()</a>.</p>
 
 </div>
 </div>
@@ -1126,6 +1170,7 @@ template&lt;int N&gt; </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="a00078.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00079.html">trajectory</a>      </li>
       <li class="navelem"><a class="el" href="a00019.html">Polynomial</a>      </li>
 </body>
 </html>

@@ -1,6 +1,6 @@
 var a00064 =
 [
-    [ "operator*", "a00078.html#a2b3a782d9313098c6cfce73c03a5d1e3", null ],
-    [ "operator*", "a00078.html#a3cca4fdfb202a1b712997e9bdac53254", null ],
-    [ "tMax", "a00078.html#a1d9d4bd345b077d1874736f67e3f135e", null ]
+    [ "operator*", "a00079.html#a0e11e2691e2e4a48478c80c4516b14ca", null ],
+    [ "operator*", "a00079.html#a872523072598fab76d9e1c4d03b3cc9f", null ],
+    [ "tMax", "a00079.html#abe3251b6da4e42a50d2716a77c8a2647", null ]
 ];

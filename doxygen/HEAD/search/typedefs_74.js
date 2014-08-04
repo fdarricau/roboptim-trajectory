@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trajectory_5ft',['trajectory_t',['../a00021.html#af2de134baefbfbef3ce8b1618d7ab153',1,'roboptim::StablePointStateFunction::trajectory_t()'],['../a00023.html#a17010521237325e087014a549c418cd3',1,'roboptim::StateFunction::trajectory_t()'],['../a00026.html#ad0b2be9f24cc110906215697a9a69a52',1,'roboptim::TrajectoryCost::trajectory_t()'],['../a00027.html#ad4fb3f8ec4865b9b461474b869485939',1,'roboptim::TrajectorySumCost::trajectory_t()']]]
+  ['trajectory_5ft',['trajectory_t',['../a00021.html#afd34543c0e231493467c9122218f16de',1,'roboptim::trajectory::StablePointStateFunction::trajectory_t()'],['../a00023.html#acccf42b5feb8155daf34349b9e256303',1,'roboptim::trajectory::StateFunction::trajectory_t()'],['../a00026.html#a9916150fe993dc8880f6b47d34ec4b58',1,'roboptim::trajectory::TrajectoryCost::trajectory_t()'],['../a00027.html#a4030674e4dbda8adb2224d59e2d84f37',1,'roboptim::trajectory::TrajectorySumCost::trajectory_t()']]]
 ];

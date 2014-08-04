@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['parent_5ft',['parent_t',['../a00004.html#aaa308b51bce2034e3589c1eec42e1ac1',1,'roboptim::BSpline::parent_t()'],['../a00006.html#ac63ba8bb8cd0272a6b7863b997ed92f9',1,'roboptim::ConstrainedBSpline::parent_t()'],['../a00009.html#a5fe407ade13c2a85ec05572f7a68581d',1,'roboptim::FreeTimeTrajectory::parent_t()'],['../a00014.html#a0221f3afb2884102f1baef6e0611ff9d',1,'roboptim::Monomial::parent_t()'],['../a00027.html#a09a020e54e182b3ff30dbba957929b4e',1,'roboptim::TrajectorySumCost::parent_t()'],['../a00025.html#a63f1856ee0c9c44db9c094558d725814',1,'roboptim::Trajectory::parent_t()']]],
-  ['polynomial3',['Polynomial3',['../a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8',1,'roboptim']]],
-  ['polynomial_5ft',['polynomial_t',['../a00004.html#a58d3681717c7b543b34c480c334a09f4',1,'roboptim::BSpline']]],
-  ['polynomials3vector_5ft',['polynomials3vector_t',['../a00007.html#a51055e67a0026088621eb650b25a739f',1,'roboptim::CubicBSpline']]],
-  ['polynomials3vectors_5ft',['polynomials3vectors_t',['../a00007.html#a8bac994ea02f5f7858099c707e352f84',1,'roboptim::CubicBSpline']]],
-  ['problem_5ft',['problem_t',['../a00010.html#ac99c64ca9f1b66729d6a40e1d4b0ac63',1,'roboptim::Freeze']]]
+  ['parent_5ft',['parent_t',['../a00004.html#ae419aab67e42de140168af04cffb2f79',1,'roboptim::trajectory::BSpline::parent_t()'],['../a00006.html#ada058a286de4c65769295c2bae774aa6',1,'roboptim::trajectory::ConstrainedBSpline::parent_t()'],['../a00009.html#a85eefa2b5c9157d61a559fd12a438ad2',1,'roboptim::trajectory::FreeTimeTrajectory::parent_t()'],['../a00014.html#a95e83a55dda43870b1d07680df9b9c6b',1,'roboptim::trajectory::Monomial::parent_t()'],['../a00027.html#a445e47d78b11da5d93a2e344e162c25b',1,'roboptim::trajectory::TrajectorySumCost::parent_t()'],['../a00025.html#adf3e7abb8c7a44543bf02aa83986499c',1,'roboptim::trajectory::Trajectory::parent_t()']]],
+  ['polynomial3',['Polynomial3',['../a00079.html#a5df3682d57663d1955268a316711fe77',1,'roboptim::trajectory']]],
+  ['polynomial_5ft',['polynomial_t',['../a00004.html#acf391b483fbb0a69231d0f8faaa6a4a1',1,'roboptim::trajectory::BSpline']]],
+  ['polynomialfunction_5ft',['polynomialFunction_t',['../a00019.html#aec9463e4e8d7191b870cc385b05982eb',1,'roboptim::trajectory::Polynomial']]],
+  ['polynomials3vector_5ft',['polynomials3vector_t',['../a00007.html#ac743c66e129374a14e185df02ddd0f80',1,'roboptim::trajectory::CubicBSpline']]],
+  ['polynomials3vectors_5ft',['polynomials3vectors_t',['../a00007.html#a4da0b92e77e833b3138fe46d996b813b',1,'roboptim::trajectory::CubicBSpline']]],
+  ['problem_5ft',['problem_t',['../a00010.html#a2837a6ce797b957a702ae6c551da5eca',1,'roboptim::trajectory::Freeze']]]
 ];

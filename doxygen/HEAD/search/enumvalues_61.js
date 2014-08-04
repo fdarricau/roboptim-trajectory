@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['all_5fzero_5fcoefficients',['all_zero_coefficients',['../a00019.html#ab8517f56366fa53134976efa1069a141a161002947b7db7fb27c0688420792488',1,'roboptim::Polynomial']]]
+  ['all_5fzero_5fcoefficients',['all_zero_coefficients',['../a00019.html#a0184bffd60b7f3cbddaa8b78596577a5a79a4a1cc3ef6d72f3b7b3bfc97bf506f',1,'roboptim::trajectory::Polynomial']]]
 ];

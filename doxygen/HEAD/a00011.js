@@ -1,7 +1,7 @@
 var a00011 =
 [
-    [ "FrontalSpeed", "a00011.html#a845015d934dff044e564c8c048279be0", null ],
-    [ "~FrontalSpeed", "a00011.html#abca26e347baf9b7ba5bfedb872710841", null ],
-    [ "impl_compute", "a00011.html#a0aa16b5fa235ff4ea09a30b6bfd50e35", null ],
-    [ "impl_gradient", "a00011.html#ae68e111aa89144b6eaf6a70815658c97", null ]
+    [ "FrontalSpeed", "a00011.html#aa79f011c1987165cee8be631ac41d5f5", null ],
+    [ "~FrontalSpeed", "a00011.html#aceeeb770db9040bb2a6222a3c12420de", null ],
+    [ "impl_compute", "a00011.html#ab908a809b83a2e88015ec05cb1cbc146", null ],
+    [ "impl_gradient", "a00011.html#ac70ac61a5f1149a1b5ec64993dd0fbdf", null ]
 ];

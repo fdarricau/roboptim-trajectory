@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['knotvector',['knotVector',['../a00004.html#a3e4800fd7c0308a20484b214302efc2e',1,'roboptim::BSpline::knotVector()'],['../a00007.html#ab4535e26005556ec102826373a6497cd',1,'roboptim::CubicBSpline::knotVector()']]]
+  ['knotvector',['knotVector',['../a00004.html#a1939fc820ee942c7d81a15fb4a5e7a50',1,'roboptim::trajectory::BSpline::knotVector()'],['../a00007.html#a6e5ff624dda366cb155d39646259db1e',1,'roboptim::trajectory::CubicBSpline::knotVector()']]]
 ];

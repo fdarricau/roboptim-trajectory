@@ -1,16 +1,19 @@
 var searchData=
 [
-  ['detail',['detail',['../a00080.html',1,'roboptim']]],
-  ['detail',['detail',['../a00083.html',1,'roboptim::visualization::gnuplot']]],
-  ['gnuplot',['gnuplot',['../a00082.html',1,'roboptim::visualization']]],
-  ['realroots',['realRoots',['../a00019.html#acc66532e3206f72e5b08451467924595',1,'roboptim::Polynomial']]],
-  ['removescalefromparameters',['removeScaleFromParameters',['../a00078.html#aa5c12d11052417b6478ab2e668ff3e14',1,'roboptim']]],
+  ['detail',['detail',['../a00081.html',1,'roboptim::trajectory']]],
+  ['detail',['detail',['../a00084.html',1,'roboptim::trajectory::visualization::gnuplot']]],
+  ['gnuplot',['gnuplot',['../a00083.html',1,'roboptim::trajectory::visualization']]],
+  ['gnuplot',['gnuplot',['../a00086.html',1,'roboptim::visualization']]],
+  ['realroots',['realRoots',['../a00019.html#aa72dadfc8ab004ca792a42414cf06b19',1,'roboptim::trajectory::Polynomial']]],
+  ['removescalefromparameters',['removeScaleFromParameters',['../a00079.html#ae63e7e215bdb4b52bb7e53eaf37e0994',1,'roboptim::trajectory']]],
   ['res_5f',['res_',['../a00060.html#aeb11d374dedce38c0fb8a53aa4c15fca',1,'spline-length.cc']]],
-  ['resize',['resize',['../a00004.html#ac10c0004aaf4363c936ce3899f62e58c',1,'roboptim::BSpline::resize()'],['../a00006.html#a324ad8469c568c4a6656900f18bf8966',1,'roboptim::ConstrainedBSpline::resize()'],['../a00007.html#a629cdb8cd2321fd129893a6e4d2a48bc',1,'roboptim::CubicBSpline::resize()'],['../a00009.html#a4f924237d4e5654f285c48b2f24073e0',1,'roboptim::FreeTimeTrajectory::resize()'],['../a00025.html#a663fb66c3ef467e6d3f0a33001ed2ad9',1,'roboptim::Trajectory::resize()'],['../a00028.html#a10e3767705188efecb3132511b86a5a2',1,'roboptim::VectorInterpolation::resize()']]],
-  ['result_5ft',['result_t',['../a00004.html#aac6152350c075f143fb812abeda6d6e0',1,'roboptim::BSpline::result_t()'],['../a00009.html#ad38a4507bc7ce1c0547d481b56c8abe7',1,'roboptim::FreeTimeTrajectory::result_t()'],['../a00025.html#a7c0a6357fa516067002b75114c56cb81',1,'roboptim::Trajectory::result_t()']]],
+  ['resize',['resize',['../a00004.html#a0860793f5e1e433aca163e74abad5a6a',1,'roboptim::trajectory::BSpline::resize()'],['../a00006.html#a207656884be62fbffcc8804043670099',1,'roboptim::trajectory::ConstrainedBSpline::resize()'],['../a00007.html#ace1c163dbe94bf5f36e2218599a0e9a4',1,'roboptim::trajectory::CubicBSpline::resize()'],['../a00009.html#ad96dc1d3ac24d319716bd1789b5ec161',1,'roboptim::trajectory::FreeTimeTrajectory::resize()'],['../a00025.html#aa5a7de2f5e4aea8156368651d08b8530',1,'roboptim::trajectory::Trajectory::resize()'],['../a00028.html#aed471279100a0db384d60c63995677c0',1,'roboptim::trajectory::VectorInterpolation::resize()']]],
+  ['result_5ft',['result_t',['../a00004.html#acbaa55e9f1cf922171987e3c58556da3',1,'roboptim::trajectory::BSpline::result_t()'],['../a00009.html#ae05efb5599ec9adb42b40ffc8a5d92a5',1,'roboptim::trajectory::FreeTimeTrajectory::result_t()'],['../a00025.html#a9d3d04ecb5a5b92cd6f11cc8173947c4',1,'roboptim::trajectory::Trajectory::result_t()']]],
   ['roboptim',['roboptim',['../a00078.html',1,'']]],
-  ['roboptim_5fdifferentiable_5ffunction_5ffwd_5ftypedefs',['ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS',['../a00028.html#ac8e5e79e01b67102e21bb0956622aca6',1,'roboptim::VectorInterpolation']]],
-  ['roboptim_5fimplement_5fclone',['ROBOPTIM_IMPLEMENT_CLONE',['../a00028.html#a6dd0194ad1c35688d01b13c75ade2342',1,'roboptim::VectorInterpolation::ROBOPTIM_IMPLEMENT_CLONE()'],['../a00072.html#a8f4791e10718727120fec1d0bf67f645',1,'ROBOPTIM_IMPLEMENT_CLONE():&#160;trajectory.hh']]],
-  ['roots_5ft',['roots_t',['../a00019.html#a4a73af23ffaa0bbcc5721cfd2fef6a21',1,'roboptim::Polynomial']]],
-  ['visualization',['visualization',['../a00081.html',1,'roboptim']]]
+  ['roboptim_5fdifferentiable_5ffunction_5ffwd_5ftypedefs',['ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS',['../a00028.html#a2887f2167c2fe0984f485b0e682aaa7e',1,'roboptim::trajectory::VectorInterpolation']]],
+  ['roboptim_5fimplement_5fclone',['ROBOPTIM_IMPLEMENT_CLONE',['../a00028.html#ab0f74697555219452813222b7079f3ca',1,'roboptim::trajectory::VectorInterpolation::ROBOPTIM_IMPLEMENT_CLONE()'],['../a00072.html#a8f4791e10718727120fec1d0bf67f645',1,'ROBOPTIM_IMPLEMENT_CLONE():&#160;trajectory.hh']]],
+  ['roots_5ft',['roots_t',['../a00019.html#a5b9e95849100440b167fac9049e7ab04',1,'roboptim::trajectory::Polynomial']]],
+  ['trajectory',['trajectory',['../a00079.html',1,'roboptim']]],
+  ['visualization',['visualization',['../a00085.html',1,'roboptim']]],
+  ['visualization',['visualization',['../a00082.html',1,'roboptim::trajectory']]]
 ];

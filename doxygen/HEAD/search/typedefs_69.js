@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interval_5ft',['interval_t',['../a00004.html#a402875cb2a17abeba4f9e5d92c8e23b6',1,'roboptim::BSpline::interval_t()'],['../a00006.html#a82f0c21a580dedff5500a805cb9dea60',1,'roboptim::ConstrainedBSpline::interval_t()'],['../a00009.html#a44dfbbe2f421035c6b5f3fc51f8d8622',1,'roboptim::FreeTimeTrajectory::interval_t()'],['../a00019.html#ac6449bfd4a55938da4d5db6e278ff78d',1,'roboptim::Polynomial::interval_t()'],['../a00025.html#a2722b17c64a0f01a73cfaf56b9188375',1,'roboptim::Trajectory::interval_t()']]]
+  ['interval_5ft',['interval_t',['../a00004.html#ae73ad231b3d72bf7ebf145ccfe9ff7be',1,'roboptim::trajectory::BSpline::interval_t()'],['../a00006.html#a209b534f2003659d1d5ea603e0ba1aad',1,'roboptim::trajectory::ConstrainedBSpline::interval_t()'],['../a00009.html#a7d728e4d47af6316f7738d0d9606bd47',1,'roboptim::trajectory::FreeTimeTrajectory::interval_t()'],['../a00019.html#a8ed2ac69a776400dc85f49a3602358e0',1,'roboptim::trajectory::Polynomial::interval_t()'],['../a00025.html#aeb038f95ba30981f67401235df796a7d',1,'roboptim::trajectory::Trajectory::interval_t()']]]
 ];

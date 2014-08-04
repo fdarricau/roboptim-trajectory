@@ -1,5 +1,5 @@
 var a00042 =
 [
-    [ "addScaleToParameters", "a00078.html#a75f523058812afb18fd488daea880d3e", null ],
-    [ "removeScaleFromParameters", "a00078.html#aa5c12d11052417b6478ab2e668ff3e14", null ]
+    [ "addScaleToParameters", "a00079.html#a8d4c21186f97f58df9b868a60bba14d6", null ],
+    [ "removeScaleFromParameters", "a00079.html#ae63e7e215bdb4b52bb7e53eaf37e0994", null ]
 ];

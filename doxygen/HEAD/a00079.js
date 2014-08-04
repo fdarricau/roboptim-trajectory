@@ -1,4 +1,4 @@
-var a00078 =
+var a00079 =
 [
     [ "AnthropomorphicCostFunction", "a00003.html", null ],
     [ "BSpline", "a00004.html", null ],
@@ -21,17 +21,17 @@ var a00078 =
     [ "TrajectorySumCost", "a00027.html", null ],
     [ "Trajectory", "a00025.html", null ],
     [ "VectorInterpolation", "a00028.html", null ],
-    [ "SumLength", "a00115.html", null ],
-    [ "SumLengthGrad", "a00116.html", null ],
-    [ "Monomial3", "a00078.html#a551b03622bc1907c6ab5a73bdfec1a32", null ],
-    [ "Polynomial3", "a00078.html#a5a84cb517e65b9793e4c84a3b6911fc8", null ],
-    [ "addScaleToParameters", "a00078.html#a75f523058812afb18fd488daea880d3e", null ],
-    [ "makeFreeze", "a00078.html#af40cca10eff172a07bee59ebfab48088", null ],
-    [ "operator*", "a00078.html#a2b3a782d9313098c6cfce73c03a5d1e3", null ],
-    [ "operator*", "a00078.html#a3cca4fdfb202a1b712997e9bdac53254", null ],
-    [ "operator*", "a00078.html#a1bce99e8564f39d649cc15f428d31435", null ],
-    [ "operator<<", "a00078.html#aaacdb79291acfe9d1ebc246bbcc803e5", null ],
-    [ "removeScaleFromParameters", "a00078.html#aa5c12d11052417b6478ab2e668ff3e14", null ],
-    [ "vectorInterpolation", "a00078.html#a9c7dcb3672048b40ea9a5703437f52ae", null ],
-    [ "tMax", "a00078.html#a1d9d4bd345b077d1874736f67e3f135e", null ]
+    [ "SumLength", "a00118.html", null ],
+    [ "SumLengthGrad", "a00119.html", null ],
+    [ "Monomial3", "a00079.html#a92b69eda689973f6ba5d42a629e2534c", null ],
+    [ "Polynomial3", "a00079.html#a5df3682d57663d1955268a316711fe77", null ],
+    [ "addScaleToParameters", "a00079.html#a8d4c21186f97f58df9b868a60bba14d6", null ],
+    [ "makeFreeze", "a00079.html#a52924ae13b9f11673ab2c6e176cff794", null ],
+    [ "operator*", "a00079.html#a0e11e2691e2e4a48478c80c4516b14ca", null ],
+    [ "operator*", "a00079.html#a872523072598fab76d9e1c4d03b3cc9f", null ],
+    [ "operator*", "a00079.html#a5bb9473b5bf453700b2c89289e202bfa", null ],
+    [ "operator<<", "a00079.html#a7b3739f14b271277b5131bcef2faecb7", null ],
+    [ "removeScaleFromParameters", "a00079.html#ae63e7e215bdb4b52bb7e53eaf37e0994", null ],
+    [ "vectorInterpolation", "a00079.html#ad85c601796e62416f9bf1ccd46f14dd6", null ],
+    [ "tMax", "a00079.html#abe3251b6da4e42a50d2716a77c8a2647", null ]
 ];

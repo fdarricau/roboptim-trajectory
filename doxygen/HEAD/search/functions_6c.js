@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['length',['length',['../a00025.html#a6e8f23a206f2f6fa065ea254d0792d62',1,'roboptim::Trajectory']]],
-  ['limitomega',['LimitOmega',['../a00012.html#ab01f410631c3a1e2495e53f628dc214d',1,'roboptim::LimitOmega']]],
-  ['limitspeed',['LimitSpeed',['../a00013.html#a13693a05b2346cc76723b9da5b53c9fd',1,'roboptim::LimitSpeed']]]
+  ['length',['length',['../a00025.html#a57b7e2305b14238bdbb26b88a1731751',1,'roboptim::trajectory::Trajectory']]],
+  ['limitomega',['LimitOmega',['../a00012.html#a4d1ff7d608e043162ee56a55cbf57ebd',1,'roboptim::trajectory::LimitOmega']]],
+  ['limitspeed',['LimitSpeed',['../a00013.html#aedb08aa1ffbf619fbfa681b1ce67763c',1,'roboptim::trajectory::LimitSpeed']]]
 ];
