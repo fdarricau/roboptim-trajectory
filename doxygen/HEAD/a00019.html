@@ -143,8 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to t0.  <a href="#a8be7bcf3651455d56e71409a66fb06b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a487a9d2aa95453b5f682bb9374aae778">operator[]</a> (int i) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the i-th polynomial coefficient.  <a href="#a487a9d2aa95453b5f682bb9374aae778"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a5b9e95849100440b167fac9049e7ab04">roots_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aa72dadfc8ab004ca792a42414cf06b19">realRoots</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#aa72dadfc8ab004ca792a42414cf06b19"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a5b9e95849100440b167fac9049e7ab04">roots_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a6f26df754ba6a94708ff4a164dbe9438">realRoots</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> epsilon=1e-6) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#a6f26df754ba6a94708ff4a164dbe9438"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a82ddc6b221b823b98c7798afacf338fe">min_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a50c6baef00dc1bf86d9acb13b413b599">min</a> (const <a class="el" href="a00019.html#a8ed2ac69a776400dc85f49a3602358e0">interval_t</a> &amp;interval) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the minimum of the polynomial on an interval.  <a href="#a50c6baef00dc1bf86d9acb13b413b599"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae09a63ad73b445aeb706aa445d25aeed">isConstant</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> epsilon=Function::epsilon()) const </td></tr>
@@ -796,6 +796,12 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>pair containing t_min and the associated minimum of the polynomial on the interval. </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>invalid polynomial. This is the case for constant polynomials since there is an infinity of critical points. This can be tested before calling <a class="el" href="a00019.html#a50c6baef00dc1bf86d9acb13b413b599" title="Compute the minimum of the polynomial on an interval.">min()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1004,16 +1010,17 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa72dadfc8ab004ca792a42414cf06b19"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::realRoots" ref="aa72dadfc8ab004ca792a42414cf06b19" args="() const " -->
+<a class="anchor" id="a6f26df754ba6a94708ff4a164dbe9438"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::realRoots" ref="a6f26df754ba6a94708ff4a164dbe9438" args="(value_type epsilon=1e&#45;6) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a5b9e95849100440b167fac9049e7ab04">roots_t</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aa72dadfc8ab004ca792a42414cf06b19">realRoots</a> </td>
+          <td class="memname"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a5b9e95849100440b167fac9049e7ab04">roots_t</a> <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a6f26df754ba6a94708ff4a164dbe9438">realRoots</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
+          <td class="paramname"><em>epsilon</em> = <code>1e-6</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1022,10 +1029,16 @@ template&lt;int N&gt; </div>
 
 <p>Return the real roots of the polynomial. </p>
 <dl class="warning"><dt><b>Warning:</b></dt><dd>This function relies on Eigen's experimental polynomial solver. The polynomial should not be null or constant. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">epsilon</td><td>epsilon used for testing constant polynomials. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>vector of the real roots of the polynomial. </dd></dl>
 <dl class="exception"><dt><b>Exceptions:</b></dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::runtime_error</td><td>invalid polynomial (e.g. null). </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>invalid polynomial (e.g. null/constant). </td></tr>
   </table>
   </dd>
 </dl>
