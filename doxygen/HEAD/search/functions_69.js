@@ -6,5 +6,7 @@ var searchData=
   ['impl_5ftranslate',['impl_translate',['../a00019.html#a2e291ec8c115f725755f7da225196934',1,'roboptim::trajectory::Polynomial']]],
   ['interval',['interval',['../a00004.html#aeefce9a296b25cd6c0f5706cecd26017',1,'roboptim::trajectory::BSpline::interval()'],['../a00007.html#af06956ede3c8021699e3efb480112bf8',1,'roboptim::trajectory::CubicBSpline::interval()']]],
   ['isconstant',['isConstant',['../a00019.html#ae09a63ad73b445aeb706aa445d25aeed',1,'roboptim::trajectory::Polynomial']]],
+  ['islinear',['isLinear',['../a00019.html#aee51ed76225223977f82cb65fe1ebe83',1,'roboptim::trajectory::Polynomial']]],
+  ['isnull',['isNull',['../a00019.html#afc399d68aef94dbb20e888cfa6aa1a83',1,'roboptim::trajectory::Polynomial']]],
   ['isvalidtime',['isValidTime',['../a00025.html#af9e970e38e9adb513f9fa6ed94a1765c',1,'roboptim::trajectory::Trajectory']]]
 ];

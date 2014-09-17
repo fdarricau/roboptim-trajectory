@@ -7,5 +7,7 @@ var searchData=
   ['interval',['interval',['../a00004.html#aeefce9a296b25cd6c0f5706cecd26017',1,'roboptim::trajectory::BSpline::interval()'],['../a00007.html#af06956ede3c8021699e3efb480112bf8',1,'roboptim::trajectory::CubicBSpline::interval()']]],
   ['interval_5ft',['interval_t',['../a00004.html#ae73ad231b3d72bf7ebf145ccfe9ff7be',1,'roboptim::trajectory::BSpline::interval_t()'],['../a00006.html#a209b534f2003659d1d5ea603e0ba1aad',1,'roboptim::trajectory::ConstrainedBSpline::interval_t()'],['../a00009.html#a7d728e4d47af6316f7738d0d9606bd47',1,'roboptim::trajectory::FreeTimeTrajectory::interval_t()'],['../a00019.html#a8ed2ac69a776400dc85f49a3602358e0',1,'roboptim::trajectory::Polynomial::interval_t()'],['../a00025.html#aeb038f95ba30981f67401235df796a7d',1,'roboptim::trajectory::Trajectory::interval_t()']]],
   ['isconstant',['isConstant',['../a00019.html#ae09a63ad73b445aeb706aa445d25aeed',1,'roboptim::trajectory::Polynomial']]],
+  ['islinear',['isLinear',['../a00019.html#aee51ed76225223977f82cb65fe1ebe83',1,'roboptim::trajectory::Polynomial']]],
+  ['isnull',['isNull',['../a00019.html#afc399d68aef94dbb20e888cfa6aa1a83',1,'roboptim::trajectory::Polynomial']]],
   ['isvalidtime',['isValidTime',['../a00025.html#af9e970e38e9adb513f9fa6ed94a1765c',1,'roboptim::trajectory::Trajectory']]]
 ];

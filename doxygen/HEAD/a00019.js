@@ -15,6 +15,7 @@ var a00019 =
     [ "Polynomial", "a00019.html#a7ea5b6aaf4f8fb128f7af10655200d17", null ],
     [ "Polynomial", "a00019.html#aab799133b2498063a3c12a340e8a749f", null ],
     [ "asFunction", "a00019.html#a377e0b0e87334988886bf92238078689", null ],
+    [ "BOOST_STATIC_ASSERT", "a00019.html#ae49cb9c3fe541268443552d8f4328f2b", null ],
     [ "coefs", "a00019.html#a54ee543e0be2c271b39d1fdeb16713a8", null ],
     [ "coefs", "a00019.html#ae0f52f29f57e42bf271e93b63a3d7d86", null ],
     [ "derivative", "a00019.html#a813c270b0fdea9e6fbf60e65ccd4719f", null ],
@@ -23,6 +24,8 @@ var a00019 =
     [ "impl_derivative", "a00019.html#a684350d78a59645681356316c3f4d7cd", null ],
     [ "impl_translate", "a00019.html#a2e291ec8c115f725755f7da225196934", null ],
     [ "isConstant", "a00019.html#ae09a63ad73b445aeb706aa445d25aeed", null ],
+    [ "isLinear", "a00019.html#aee51ed76225223977f82cb65fe1ebe83", null ],
+    [ "isNull", "a00019.html#afc399d68aef94dbb20e888cfa6aa1a83", null ],
     [ "min", "a00019.html#a50c6baef00dc1bf86d9acb13b413b599", null ],
     [ "operator()", "a00019.html#a6194efdc5715b731e6a8b4438763dc4a", null ],
     [ "operator*", "a00019.html#ae7b791b2f2716f3496227a2a965197c6", null ],
@@ -36,5 +39,6 @@ var a00019 =
     [ "t0", "a00019.html#a8be7bcf3651455d56e71409a66fb06b2", null ],
     [ "translate", "a00019.html#a9b488d87a85c5fa46725050183ea3f7a", null ],
     [ "translateInPlace", "a00019.html#a5c47704f613f1a5588e365b1c3749b91", null ],
+    [ "trueOrder", "a00019.html#ad6a510f4478242a81d2e92f4691e0513", null ],
     [ "order_", "a00019.html#a5de7261e449ec6888b7163a5203514bd", null ]
 ];

@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::trajectory::Polynomial" -->
-<p><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> of degree at most N.  
+<p><a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> of degree at most N (N &gt;= 0).  
  <a href="a00019.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/trajectory/polynomial.hh&gt;</code></p>
@@ -101,9 +101,11 @@ Public Types</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a minimum query: (t_min, P(t_min))  <a href="#a82ddc6b221b823b98c7798afacf338fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef ::roboptim::Polynomial<br class="typebreak"/>
 &lt; Function::traits_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aec9463e4e8d7191b870cc385b05982eb">polynomialFunction_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function.  <a href="#aec9463e4e8d7191b870cc385b05982eb"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> function.  <a href="#aec9463e4e8d7191b870cc385b05982eb"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae49cb9c3fe541268443552d8f4328f2b">BOOST_STATIC_ASSERT</a> (N &gt;=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> degree &gt;= 0.  <a href="#ae49cb9c3fe541268443552d8f4328f2b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a65303805be2d2beeee986b6a8223c3a9">Polynomial</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor: return a null polynomial.  <a href="#a65303805be2d2beeee986b6a8223c3a9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a30d2b0f0213f8108287ebf7835986561">Polynomial</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> <a class="el" href="a00019.html#ab7438705bb8f24644d7af2f7e5618645">t0</a>, const <a class="el" href="a00019.html#ab1843ffcdbcb1c1805fac63791c71277">vector_t</a> &amp;<a class="el" href="a00019.html#a54ee543e0be2c271b39d1fdeb16713a8">coefs</a>)</td></tr>
@@ -147,10 +149,16 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real roots of the polynomial.  <a href="#a6f26df754ba6a94708ff4a164dbe9438"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#a82ddc6b221b823b98c7798afacf338fe">min_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a50c6baef00dc1bf86d9acb13b413b599">min</a> (const <a class="el" href="a00019.html#a8ed2ac69a776400dc85f49a3602358e0">interval_t</a> &amp;interval) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the minimum of the polynomial on an interval.  <a href="#a50c6baef00dc1bf86d9acb13b413b599"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#afc399d68aef94dbb20e888cfa6aa1a83">isNull</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> epsilon=Function::epsilon()) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the polynomial is null.  <a href="#afc399d68aef94dbb20e888cfa6aa1a83"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ae09a63ad73b445aeb706aa445d25aeed">isConstant</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> epsilon=Function::epsilon()) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the polynomial is constant.  <a href="#ae09a63ad73b445aeb706aa445d25aeed"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aee51ed76225223977f82cb65fe1ebe83">isLinear</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> epsilon=Function::epsilon()) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the polynomial is linear.  <a href="#aee51ed76225223977f82cb65fe1ebe83"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ad6a510f4478242a81d2e92f4691e0513">trueOrder</a> (<a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a> epsilon=Function::epsilon()) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the "true" order of the polynomial.  <a href="#ad6a510f4478242a81d2e92f4691e0513"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#aec9463e4e8d7191b870cc385b05982eb">polynomialFunction_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a377e0b0e87334988886bf92238078689">asFunction</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the equivalent <a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function.  <a href="#a377e0b0e87334988886bf92238078689"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the equivalent <a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> function.  <a href="#a377e0b0e87334988886bf92238078689"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ad70b739002a3a129317c5926174276b4">order</a> ()</td></tr>
@@ -182,7 +190,7 @@ Static Protected Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;int N&gt;<br/>
 class roboptim::trajectory::Polynomial&lt; N &gt;</h3>
 
-<p><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> of degree at most N. </p>
+<p><a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> of degree at most N (N &gt;= 0). </p>
 <p class="formulaDsp">
 <img class="formulaDsp" alt="\[ P (t) = \sum_{i=0}^{N} a_i (t-t_0)^i \]" src="form_10.png"/>
 </p>
@@ -249,7 +257,7 @@ template&lt;int N&gt; </div>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function. </p>
+<p><a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> function. </p>
 
 </div>
 </div>
@@ -540,9 +548,30 @@ template&lt;int N&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Get the equivalent <a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function. </p>
+<p>Get the equivalent <a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> function. </p>
 <p>This can be used for all the methods that expect a RobOptim function (e.g. plotting). </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="a00019.html" title="Polynomial of degree at most N.">Polynomial</a> function with the appropriate coefficients set. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> function with the appropriate coefficients set. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae49cb9c3fe541268443552d8f4328f2b"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::BOOST_STATIC_ASSERT" ref="ae49cb9c3fe541268443552d8f4328f2b" args="(N &gt;=0)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ae49cb9c3fe541268443552d8f4328f2b">BOOST_STATIC_ASSERT</a> </td>
+          <td>(</td>
+          <td class="paramtype">N &gt;=&#160;</td>
+          <td class="paramname"><em>0</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> degree &gt;= 0. </p>
 
 </div>
 </div>
@@ -768,6 +797,62 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if the polynomial is constant, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aee51ed76225223977f82cb65fe1ebe83"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::isLinear" ref="aee51ed76225223977f82cb65fe1ebe83" args="(value_type epsilon=Function::epsilon()) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#aee51ed76225223977f82cb65fe1ebe83">isLinear</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
+          <td class="paramname"><em>epsilon</em> = <code>Function::epsilon&#160;()</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return whether the polynomial is linear. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">epsilon</td><td>epsilon used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if the polynomial is linear, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afc399d68aef94dbb20e888cfa6aa1a83"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::isNull" ref="afc399d68aef94dbb20e888cfa6aa1a83" args="(value_type epsilon=Function::epsilon()) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#afc399d68aef94dbb20e888cfa6aa1a83">isNull</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
+          <td class="paramname"><em>epsilon</em> = <code>Function::epsilon&#160;()</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return whether the polynomial is null. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">epsilon</td><td>epsilon used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if the polynomial is null, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1141,6 +1226,29 @@ template&lt;int N&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ad6a510f4478242a81d2e92f4691e0513"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::trueOrder" ref="ad6a510f4478242a81d2e92f4691e0513" args="(value_type epsilon=Function::epsilon()) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#ad6a510f4478242a81d2e92f4691e0513">trueOrder</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00019.html#af4a479ed6532ddfe59d7d7427b416dc4">value_type</a>&#160;</td>
+          <td class="paramname"><em>epsilon</em> = <code>Function::epsilon&#160;()</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the "true" order of the polynomial. </p>
+<p>Leading coefficients may be null, which c </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>degree for the highest exponent with a nonzero coeffcient. </dd></dl>
 
 </div>
 </div>
