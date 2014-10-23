@@ -63,7 +63,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">polynomial.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/static_assert.hpp&gt;</code><br/>
+<div class="textblock"><code>#include &lt;ostream&gt;</code><br/>
+<code>#include &lt;boost/static_assert.hpp&gt;</code><br/>
 <code>#include &lt;roboptim/core/function.hh&gt;</code><br/>
 <code>#include &lt;roboptim/core/function/polynomial.hh&gt;</code><br/>
 <code>#include &lt;<a class="el" href="a00058.html">roboptim/trajectory/polynomial.hxx</a>&gt;</code><br/>
@@ -86,6 +87,9 @@ Namespaces</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html">roboptim::trajectory</a></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#a7dac240725757d9d6bbc48b91d621567">roboptim::trajectory::operator&lt;&lt;</a> (std::ostream &amp;stream, const Polynomial&lt; N &gt; &amp;p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a polynomial to a given output stream.  <a href="#a7dac240725757d9d6bbc48b91d621567"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">Polynomial&lt; N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#a5bb9473b5bf453700b2c89289e202bfa">roboptim::trajectory::operator*</a> (typename Polynomial&lt; N &gt;::value_type lambda, const Polynomial&lt; N &gt; &amp;poly)</td></tr>
 </table>

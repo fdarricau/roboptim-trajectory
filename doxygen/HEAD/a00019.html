@@ -159,6 +159,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the "true" order of the polynomial.  <a href="#ad6a510f4478242a81d2e92f4691e0513"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00019.html#aec9463e4e8d7191b870cc385b05982eb">polynomialFunction_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a377e0b0e87334988886bf92238078689">asFunction</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the equivalent <a class="el" href="a00019.html" title="Polynomial of degree at most N (N &gt;= 0).">Polynomial</a> function.  <a href="#a377e0b0e87334988886bf92238078689"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a8acd9cb5087f34b4e5cc7c9ff4f57e18">print</a> (std::ostream &amp;o) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the polynomial.  <a href="#a8acd9cb5087f34b4e5cc7c9ff4f57e18"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ad70b739002a3a129317c5926174276b4">order</a> ()</td></tr>
@@ -1092,6 +1094,34 @@ template&lt;int N&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd>order of such a polynomial. </dd></dl>
 
 <p>References <a class="el" href="a00019.html#a5de7261e449ec6888b7163a5203514bd">roboptim::trajectory::Polynomial&lt; N &gt;::order_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8acd9cb5087f34b4e5cc7c9ff4f57e18"></a><!-- doxytag: member="roboptim::trajectory::Polynomial::print" ref="a8acd9cb5087f34b4e5cc7c9ff4f57e18" args="(std::ostream &amp;o) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00019.html">roboptim::trajectory::Polynomial</a>&lt; N &gt;::<a class="el" href="a00019.html#a8acd9cb5087f34b4e5cc7c9ff4f57e18">print</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Print the polynomial. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream. </dd></dl>
 
 </div>
 </div>

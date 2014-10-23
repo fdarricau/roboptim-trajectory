@@ -34,6 +34,7 @@ var a00019 =
     [ "operator-", "a00019.html#a3b00dc3f78daf3c4d559935bdf28d195", null ],
     [ "operator[]", "a00019.html#a487a9d2aa95453b5f682bb9374aae778", null ],
     [ "order", "a00019.html#ad70b739002a3a129317c5926174276b4", null ],
+    [ "print", "a00019.html#a8acd9cb5087f34b4e5cc7c9ff4f57e18", null ],
     [ "realRoots", "a00019.html#a6f26df754ba6a94708ff4a164dbe9438", null ],
     [ "t0", "a00019.html#ab7438705bb8f24644d7af2f7e5618645", null ],
     [ "t0", "a00019.html#a8be7bcf3651455d56e71409a66fb06b2", null ],

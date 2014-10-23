@@ -6,7 +6,7 @@ var searchData=
   ['operator_2b',['operator+',['../a00007.html#ac10bd1820b10c767373d0c6d5f237b81',1,'roboptim::trajectory::CubicBSpline::operator+()'],['../a00019.html#a58309a00ed9509b13119af4a9781af4d',1,'roboptim::trajectory::Polynomial::operator+()']]],
   ['operator_2b_3d',['operator+=',['../a00007.html#ad94db62650aaf313401a286a147580d2',1,'roboptim::trajectory::CubicBSpline']]],
   ['operator_2d',['operator-',['../a00019.html#a3b00dc3f78daf3c4d559935bdf28d195',1,'roboptim::trajectory::Polynomial']]],
-  ['operator_3c_3c',['operator<<',['../a00079.html#a7b3739f14b271277b5131bcef2faecb7',1,'roboptim::trajectory']]],
+  ['operator_3c_3c',['operator<<',['../a00079.html#a7dac240725757d9d6bbc48b91d621567',1,'roboptim::trajectory']]],
   ['operator_5b_5d',['operator[]',['../a00019.html#a487a9d2aa95453b5f682bb9374aae778',1,'roboptim::trajectory::Polynomial']]],
   ['order',['order',['../a00019.html#ad70b739002a3a129317c5926174276b4',1,'roboptim::trajectory::Polynomial::order()'],['../a00021.html#a75b6df5cb75c2a7f14701941cf4052b1',1,'roboptim::trajectory::StablePointStateFunction::order()'],['../a00023.html#afb15f4cf548efdce6eefcbae31e77b77',1,'roboptim::trajectory::StateFunction::order()'],['../a00027.html#a2ae940d697f7eb4a9f364c9bc712e228',1,'roboptim::trajectory::TrajectorySumCost::order()']]],
   ['order_5f',['order_',['../a00004.html#ac7b721725443b28933dc243bd9d9275c',1,'roboptim::trajectory::BSpline::order_()'],['../a00019.html#a5de7261e449ec6888b7163a5203514bd',1,'roboptim::trajectory::Polynomial::order_()']]],

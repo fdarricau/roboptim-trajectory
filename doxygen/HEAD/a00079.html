@@ -128,9 +128,10 @@ Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename P &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00010.html">Freeze</a>&lt; P &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#a52924ae13b9f11673ab2c6e176cff794">makeFreeze</a> (P &amp;problem)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#a5bb9473b5bf453700b2c89289e202bfa">operator*</a> (typename <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::value_type lambda, const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;poly)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#a7dac240725757d9d6bbc48b91d621567">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a polynomial to a given output stream.  <a href="#a7dac240725757d9d6bbc48b91d621567"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#a7b3739f14b271277b5131bcef2faecb7">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;p)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#a5bb9473b5bf453700b2c89289e202bfa">operator*</a> (typename <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt;::value_type lambda, const <a class="el" href="a00019.html">Polynomial</a>&lt; N &gt; &amp;poly)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a0e11e2691e2e4a48478c80c4516b14ca">operator*</a> (Function::value_type alpha, <a class="el" href="a00024.html">TMax</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00022.html">StableTimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a872523072598fab76d9e1c4d03b3cc9f">operator*</a> (<a class="el" href="a00024.html">TMax</a>, Function::value_type alpha)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr<br class="typebreak"/>
@@ -307,14 +308,14 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7b3739f14b271277b5131bcef2faecb7"></a><!-- doxytag: member="roboptim::trajectory::operator&lt;&lt;" ref="a7b3739f14b271277b5131bcef2faecb7" args="(std::ostream &amp;stream, const Polynomial&lt; N &gt; &amp;p)" -->
+<a class="anchor" id="a7dac240725757d9d6bbc48b91d621567"></a><!-- doxytag: member="roboptim::trajectory::operator&lt;&lt;" ref="a7dac240725757d9d6bbc48b91d621567" args="(std::ostream &amp;stream, const Polynomial&lt; N &gt; &amp;p)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; roboptim::trajectory::operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; roboptim::trajectory::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
@@ -333,6 +334,22 @@ template&lt;int N&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Print a polynomial to a given output stream. </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">N</td><td>polynomial degree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream. </td></tr>
+    <tr><td class="paramname">p</td><td>polynomial. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream. </dd></dl>
 
 </div>
 </div>
