@@ -91,10 +91,13 @@ Eigen::aligned_allocator<br class="typebreak"/>
 &lt; <a class="el" href="a00079.html#a5df3682d57663d1955268a316711fe77">Polynomial3</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ac743c66e129374a14e185df02ddd0f80">polynomials3vector_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
 &lt; <a class="el" href="a00007.html#ac743c66e129374a14e185df02ddd0f80">polynomials3vector_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a4da0b92e77e833b3138fe46d996b813b">polynomials3vectors_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00025.html#aba7e3835672c9faf95a5a80df847fa63">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ae19d294bb228f65f64fbb13871beb453">knots_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#afc66e1fafacaa1d1494178cf25f49ce7">CubicBSpline</a> (<a class="el" href="a00025.html#aeb038f95ba30981f67401235df796a7d">interval_t</a> <a class="el" href="a00025.html#a62f48320625ff2e9082b987e07dceed1">timeRange</a>, <a class="el" href="a00025.html#a0d467d769041b181340d519462cd853f">size_type</a> dimension, const <a class="el" href="a00025.html#a8adccb652bc57bc38b98df389c81c871">vector_t</a> &amp;<a class="el" href="a00025.html#a856ce857a44632e4a1776f800e7e3189">parameters</a>, const std::string name=&quot;cubic B-Spline&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a cubic B-Spline from its definition.  <a href="#afc66e1fafacaa1d1494178cf25f49ce7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#abb2077b4e9a5cd837b58b07ce293d58c">CubicBSpline</a> (<a class="el" href="a00025.html#a0d467d769041b181340d519462cd853f">size_type</a> dimension, const <a class="el" href="a00007.html#ae19d294bb228f65f64fbb13871beb453">knots_t</a> &amp;knots, const <a class="el" href="a00025.html#a8adccb652bc57bc38b98df389c81c871">vector_t</a> &amp;<a class="el" href="a00025.html#a856ce857a44632e4a1776f800e7e3189">parameters</a>, const std::string name=&quot;cubic B-Spline&quot;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a cubic B-Spline from its definition.  <a href="#abb2077b4e9a5cd837b58b07ce293d58c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ab6c9d6c743942e947ff37e72e2e64200">CubicBSpline</a> (const <a class="el" href="a00007.html">CubicBSpline</a> &amp;spline)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#ab6c9d6c743942e947ff37e72e2e64200"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a04e4ffd4624ecb04d56ebac48db5dca4">~CubicBSpline</a> ()</td></tr>
@@ -156,6 +159,19 @@ Protected Member Functions</h2></td></tr>
 <p>Implement a B-Spline as a trajectory as described in doc/cubic-b-spline.tex </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00002.html#_a0">spline-optimization.cc</a>, and <a class="el" href="a00001.html#_a1">spline-time-optimization.cc</a>.</dd>
 </dl></div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="ae19d294bb228f65f64fbb13871beb453"></a><!-- doxytag: member="roboptim::trajectory::CubicBSpline::knots_t" ref="ae19d294bb228f65f64fbb13871beb453" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00025.html#aba7e3835672c9faf95a5a80df847fa63">value_type</a>&gt; <a class="el" href="a00007.html#ae19d294bb228f65f64fbb13871beb453">roboptim::trajectory::CubicBSpline::knots_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac743c66e129374a14e185df02ddd0f80"></a><!-- doxytag: member="roboptim::trajectory::CubicBSpline::polynomials3vector_t" ref="ac743c66e129374a14e185df02ddd0f80" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -235,6 +251,59 @@ Protected Member Functions</h2></td></tr>
 <p>References <a class="el" href="a00007.html#aade8092256a034fe2028b4e10d95afb6">computeBasisPolynomials()</a>, <a class="el" href="a00025.html#ac44a68ca9aec16da67fcffdd51850a5f">roboptim::trajectory::Trajectory&lt; 3 &gt;::parameters_</a>, and <a class="el" href="a00007.html#ae1155e97bac0f868954e5d1b36e5cba5">setParameters()</a>.</p>
 
 <p>Referenced by <a class="el" href="a00007.html#ace1c163dbe94bf5f36e2218599a0e9a4">resize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb2077b4e9a5cd837b58b07ce293d58c"></a><!-- doxytag: member="roboptim::trajectory::CubicBSpline::CubicBSpline" ref="abb2077b4e9a5cd837b58b07ce293d58c" args="(size_type dimension, const knots_t &amp;knots, const vector_t &amp;parameters, const std::string name=&quot;cubic B&#45;Spline&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html#afc66e1fafacaa1d1494178cf25f49ce7">roboptim::trajectory::CubicBSpline::CubicBSpline</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00025.html#a0d467d769041b181340d519462cd853f">size_type</a>&#160;</td>
+          <td class="paramname"><em>dimension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html#ae19d294bb228f65f64fbb13871beb453">knots_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00025.html#a8adccb652bc57bc38b98df389c81c871">vector_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;cubic&#160;B-Spline&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Instantiate a cubic B-Spline from its definition. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dimension</td><td>spline dimension: <img class="formulaInl" alt="$n$" src="form_1.png"/> </td></tr>
+    <tr><td class="paramname">knots</td><td>vector of knots, </td></tr>
+    <tr><td class="paramname">parameters</td><td>vector of parameters defining control points </td></tr>
+    <tr><td class="paramname">name</td><td>function title</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The number of control points is inferred from the dimension of the parameter vector. </p>
+
+<p>References <a class="el" href="a00007.html#aade8092256a034fe2028b4e10d95afb6">computeBasisPolynomials()</a>, <a class="el" href="a00025.html#ac44a68ca9aec16da67fcffdd51850a5f">roboptim::trajectory::Trajectory&lt; 3 &gt;::parameters_</a>, and <a class="el" href="a00007.html#ae1155e97bac0f868954e5d1b36e5cba5">setParameters()</a>.</p>
 
 </div>
 </div>
@@ -703,7 +772,7 @@ template&lt;typename P &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>index of the interval in which t is. </dd></dl>
 
-<p>References <a class="el" href="a00081.html#a68b990fda00ef3500447ca77e50e4e0b">roboptim::trajectory::detail::fixTime()</a>, and <a class="el" href="a00025.html#a62f48320625ff2e9082b987e07dceed1">roboptim::trajectory::Trajectory&lt; 3 &gt;::timeRange()</a>.</p>
+<p>References <a class="el" href="a00081.html#a68b990fda00ef3500447ca77e50e4e0b">roboptim::trajectory::detail::fixTime()</a>.</p>
 
 <p>Referenced by <a class="el" href="a00007.html#a37dd08e1ad020ba641c5c2e5e333a7b2">basisFunctions()</a>, <a class="el" href="a00007.html#a743ad87d377a89f70e61222aeac14ca2">freezeCurveEnd()</a>, <a class="el" href="a00007.html#abc14838d388224842fa25defba51c6a4">freezeCurveStart()</a>, <a class="el" href="a00007.html#a63b252d947004d7272edb93e83cb7829">impl_derivative()</a>, and <a class="el" href="a00007.html#aeb04faacc1e8a8e658995be9132b33fa">variationDerivWrtParam()</a>.</p>
 

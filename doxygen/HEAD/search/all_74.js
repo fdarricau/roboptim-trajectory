@@ -10,7 +10,7 @@ var searchData=
   ['topolynomials',['toPolynomials',['../a00007.html#a40f8264ab0a66a134a125a299dcd7929',1,'roboptim::trajectory::CubicBSpline']]],
   ['traj_5f',['traj_',['../a00060.html#a3cd919251d80ac5f4e1ffe45dd5f9445',1,'spline-length.cc']]],
   ['trajectory',['Trajectory',['../a00025.html',1,'roboptim::trajectory']]],
-  ['trajectory',['trajectory',['../a00013.html#a62f4a951500d9207d8ee81b7338dcc60',1,'roboptim::trajectory::LimitSpeed::trajectory()'],['../a00025.html#a46f0104da7e14c3bdf8e5d011148371a',1,'roboptim::trajectory::Trajectory::Trajectory()']]],
+  ['trajectory',['Trajectory',['../a00025.html#a46f0104da7e14c3bdf8e5d011148371a',1,'roboptim::trajectory::Trajectory::Trajectory()'],['../a00013.html#a62f4a951500d9207d8ee81b7338dcc60',1,'roboptim::trajectory::LimitSpeed::trajectory()']]],
   ['trajectory_2dcost_2ehh',['trajectory-cost.hh',['../a00068.html',1,'']]],
   ['trajectory_2dcost_2ehxx',['trajectory-cost.hxx',['../a00069.html',1,'']]],
   ['trajectory_2dsum_2dcost_2ehh',['trajectory-sum-cost.hh',['../a00070.html',1,'']]],

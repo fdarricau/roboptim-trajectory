@@ -19,6 +19,6 @@ var searchData=
   ['cubic_2db_2dspline_2ecc',['cubic-b-spline.cc',['../a00037.html',1,'']]],
   ['cubic_2db_2dspline_2ehh',['cubic-b-spline.hh',['../a00038.html',1,'']]],
   ['cubic_2db_2dspline_2ehxx',['cubic-b-spline.hxx',['../a00039.html',1,'']]],
-  ['cubicbspline',['CubicBSpline',['../a00007.html#afc66e1fafacaa1d1494178cf25f49ce7',1,'roboptim::trajectory::CubicBSpline::CubicBSpline(interval_t timeRange, size_type dimension, const vector_t &amp;parameters, const std::string name=&quot;cubic B-Spline&quot;)'],['../a00007.html#ab6c9d6c743942e947ff37e72e2e64200',1,'roboptim::trajectory::CubicBSpline::CubicBSpline(const CubicBSpline &amp;spline)']]],
+  ['cubicbspline',['CubicBSpline',['../a00007.html#afc66e1fafacaa1d1494178cf25f49ce7',1,'roboptim::trajectory::CubicBSpline::CubicBSpline(interval_t timeRange, size_type dimension, const vector_t &amp;parameters, const std::string name=&quot;cubic B-Spline&quot;)'],['../a00007.html#abb2077b4e9a5cd837b58b07ce293d58c',1,'roboptim::trajectory::CubicBSpline::CubicBSpline(size_type dimension, const knots_t &amp;knots, const vector_t &amp;parameters, const std::string name=&quot;cubic B-Spline&quot;)'],['../a00007.html#ab6c9d6c743942e947ff37e72e2e64200',1,'roboptim::trajectory::CubicBSpline::CubicBSpline(const CubicBSpline &amp;spline)']]],
   ['cubicbspline',['CubicBSpline',['../a00007.html',1,'roboptim::trajectory']]]
 ];

@@ -1,8 +1,10 @@
 var a00007 =
 [
+    [ "knots_t", "a00007.html#ae19d294bb228f65f64fbb13871beb453", null ],
     [ "polynomials3vector_t", "a00007.html#ac743c66e129374a14e185df02ddd0f80", null ],
     [ "polynomials3vectors_t", "a00007.html#a4da0b92e77e833b3138fe46d996b813b", null ],
     [ "CubicBSpline", "a00007.html#afc66e1fafacaa1d1494178cf25f49ce7", null ],
+    [ "CubicBSpline", "a00007.html#abb2077b4e9a5cd837b58b07ce293d58c", null ],
     [ "CubicBSpline", "a00007.html#ab6c9d6c743942e947ff37e72e2e64200", null ],
     [ "~CubicBSpline", "a00007.html#a04e4ffd4624ecb04d56ebac48db5dca4", null ],
     [ "basisFunctions", "a00007.html#a37dd08e1ad020ba641c5c2e5e333a7b2", null ],
