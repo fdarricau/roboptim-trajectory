@@ -548,5 +548,10 @@ namespace trajectory
       << decindent;
     return o;
   }
+
+  int CubicBSpline::dimension () const
+  {
+    return 3;
+  }
 } // end of namespace trajectory.
 } // end of namespace roboptim.
